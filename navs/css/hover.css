@@ -1,0 +1,53 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #0095b7;
+ }
+
+ .navbar {
+   display: inline-block;
+   float: right;
+   width: 50%;
+   margin-top: 2%;
+ }
+
+.nav-link {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  left: 35%;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;  /* Text opacity set to 1 on hover, originally 0.75 */
+}
+
+
+.nav-link::before {
+  transition: 300ms;
+  height: 2px; /*height of underline*/
+  content: "";
+  position: absolute;
+  background-color: white; /*Colour of link underline*/
+}
+
+.nav-link-animate::before {
+  width: 0%;  /*Width of the line*/
+  top: 40px;
+  opacity: 0; /*line opacity invisible before*/
+  /*right:50px; Starting position before hover*/
+}
+
+.nav-link-animate:hover::before {
+  width: 100%; /*Width of the line = fades from 0 to 100%*/
+  left:0; /*How heigh the underline raises up on hover*/
+  opacity: 1; /*line opacity visible on hover*/
+}
