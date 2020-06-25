@@ -1,7 +1,7 @@
 body {
   font-family: 'Sarabun', sans-serif;
-  background-color: #0095b7;
-  color: #40514E;
+  background-color: #32a7ab;
+  color: white;
   margin: 0;
 }
 
@@ -17,13 +17,13 @@ h2 {
   font-family: 'Sarabun', sans-serif;
   font-size: 2.5rem;
   margin: 25px auto;
-  color: #0095b7;
+  color: #32a7ab;
   }
 
 h3 {
   font-family: 'Sarabun', sans-serif;
   font-size: 1.5rem;
-  color: #0095b7;
+  color: #32a7ab
   }
 
 hr {
@@ -43,7 +43,7 @@ hr {
 /*-----------------NAVIGATION BAR-------------------*/
 
 .navbar-container {
-  padding: 2% 10%;
+  padding: 2% 15%;
 }
 
 .normal-navbar {
@@ -116,20 +116,26 @@ hr {
   top: 25%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
 }
 
-.overlay a {
-  padding: 15px;
+.nav-links-overlay {
+  padding: 20px 0;
+  margin: 0 30%;
   text-decoration: none;
   font-size: 36px;
-  color: #0095b7;
+  color: #32a7ab;
   display: block;
+  position: relative;
 }
 
-.overlay a:hover, .overlay a:focus {
-  text-decoration: underline;
+.nav-links-overlay:hover{
+  opacity: 85%;
 }
+
+.nav-links-overlay:active {
+  opacity: 35%;
+}
+
 
 .overlay .closebtn {
   position: absolute;
@@ -137,6 +143,11 @@ hr {
   right: 45px;
   font-size: 60px;
   text-decoration: none !important;
+  color: #32a7ab;
+}
+
+.closebtn:hover {
+  opacity: 85%;
 }
 
 @media (max-width: 999px) {
@@ -160,19 +171,17 @@ hr {
 /*-------------END OF NAV CODE-----------------*/
 
 
-
-
 /*-------------INTRO-----------------*/
 .top-container {
-  background-color: #0095b7;
+  background-color: #32a7ab
   color: white;
   text-align: center;
   position: relative;
-  padding-bottom: 3%;
+  padding-bottom: 5%;
 }
 
 .name {
-  margin-top: 2%;
+  margin-top: 3%;
 }
 
  .profession {
@@ -191,7 +200,7 @@ hr {
 
  .about-container {
    background-color: white;
-   color: #0095b7;
+   color: #32a7ab;
    text-align: center;
    padding: 25% 0;
  }
@@ -203,7 +212,7 @@ hr {
  /*-------------SKILLS-----------------*/
 
  .skills-container {
-   background-color: #0095b7;
+   background-color: #32a7ab;
    text-align: center;
    padding: 25% 0;
  }
@@ -220,7 +229,7 @@ hr {
    background-color: white;
    text-align: center;
    padding: 25% 0;
-   color: #0095b7;
+   color: #32a7ab;
  }
 
  #contact-heading {
@@ -231,7 +240,7 @@ hr {
 
  footer {
    display: block;
-   background-color: #0095b7;
+   background-color: #32a7ab;
    text-align: center;
    color: white;
    padding: 5% 0;
