@@ -14,4 +14,11 @@ $(document).ready(function(){
     $('header nav ul').toggleClass('myClass2');
     $('.sub-menu-items .active').toggleClass('.sub-menu-items .active');
   });
+
+//SMOOTH ANIMATION ON CLICK
+  $(".down-arrow").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top
+    }, 1000);
+});
 })
