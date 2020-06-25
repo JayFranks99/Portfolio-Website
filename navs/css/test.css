@@ -221,7 +221,7 @@ header nav ul li.active ul a {
 
 .content-wrapper {
   width: 80%;
-  margin: 2.5% 10% 2.5% 10%;
+  margin: 3% 10% 3% 10%;
   padding-bottom: 7.5%;
 }
 
@@ -232,15 +232,12 @@ header nav ul li.active ul a {
 .text-wrapper {
   color: #3c3c3b;
   width: 100%;
-  position: relative;
   margin-top: -35%;
   text-align: center;
-  z-index: -100;
+  z-index: -1;
   line-height: 0.5;
   letter-spacing: 2px;
 }
-
-
 
 .text-wrapper img {
 width: 12%;
@@ -254,18 +251,22 @@ margin: 0
   margin: 1%
 }
 
-.text-wrapper h3 {
+.text-wrapper h5 {
 font-family: 'Archivo', sans-serif;
 margin: 1%;
-font-size: 2rem;
+font-size: 1.5rem;
 }
 
 .down-arrow {
+  color: #3c3c3b;
   font-size: 3rem;
+  margin-top: 1%;
   cursor: pointer;
-  margin-top: 12.5%
-  }
+}
 
+.down-arrow:hover {
+ color: #737370;
+}
 
 /*---------------------------------ABOUT PAGE------------------------------------*/
 
@@ -286,7 +287,7 @@ font-size: 2rem;
   }
 
   .about-description {
-    margin: 0%;
+    margin: 0;
     text-align: justify;
     color: #737370;
   }
@@ -368,11 +369,52 @@ font-size: 2rem;
 
 
   @media (max-width: 1200px)  {
+    /*------LANDING PAGE-----*/
+
+     .content-wrapper {
+      width: 80%;
+      margin: 10% 10% 10% 10%;
+    }
+
+    .content-wrapper img {
+      width: 100%;
+    }
+
+    .text-wrapper {
+      color: #3c3c3b;
+      width: 100%;
+      margin-top: -40%;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+
+    .text-wrapper img {
+    width: 15%;
+    height: 15%;
+    margin: 0;
+    }
+
+    .text-wrapper h1 {
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 3rem;
+      margin: 1%
+    }
+
+    .text-wrapper h3 {
+    font-family: 'Archivo', sans-serif;
+    margin: 1%;
+    font-size: 1.5rem;
+    }
+
+    .down-arrow {
+      font-size: 3rem;
+      margin-top: 5%
+      }
 
   }
 
 
-  /*-------MEDIUM DEVICES---------*/
+      /*--------------------------MEDIUM DEVICES------------------------*/
 
   @media (max-width: 768px) {
 
@@ -383,26 +425,47 @@ font-size: 2rem;
     opacity: 1;
     }
 
-    /*LANDING*/
+    /*------LANDING PAGE-----*/
 
-    .landing-container {
-
+    .content-wrapper {
+      width: 80%;
+      margin: 17.5% 10% 17.5% 10%;
     }
 
-    .logo-landing {
-
+    .content-wrapper img {
+      width: 100%;
     }
 
-    .intro-heading {
-
+    .text-wrapper {
+      color: #3c3c3b;
+      width: 100%;
+      margin-top: -40%;
+      text-align: center;
+      letter-spacing: 2px;
     }
 
-    .intro-description {
+    .text-wrapper img {
+    width: 20%;
+    height: 20%;
+    margin: 0;
+    }
+
+    .text-wrapper h1 {
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 3rem;
+      margin: 1%
+    }
+
+    .text-wrapper h3 {
+    font-family: 'Archivo', sans-serif;
+    margin: 1%;
+    font-size: 1.5rem;
     }
 
     .down-arrow {
       font-size: 3rem;
-    }
+      margin-top: 5%
+      }
 
 
     /*ABOUT*/
@@ -436,12 +499,12 @@ font-size: 2rem;
     }
 
 
-    /*---------SMALL DEVICES---------*/
+    /*--------------------------SMALL DEVICES------------------------*/
 
   @media (max-width: 600px)  {
 
     .myClass2 {
-    top: 7%;
+    top: 10%;
     transition: 0.5s;
     opacity: 1;
     }
@@ -455,53 +518,48 @@ font-size: 2rem;
     }
 
 
-    /*---------------------------------LANDING PAGE------------------------------------*/
+    /*------LANDING PAGE-----*/
 
     .content-wrapper {
       width: 80%;
-      margin: 2.5% 10% 2.5% 10%;
-      padding-bottom: 7.5%;
+      margin: 40% 10% 40% 10%;
     }
 
     .content-wrapper img {
-      width: 100%;
+      /* width: 100%; */
+      width: 0;
     }
 
     .text-wrapper {
       color: #3c3c3b;
       width: 100%;
-      position: relative;
-      margin-top: -35%;
+      /* margin-top: -50%; */
+      margin-top: -20%;
       text-align: center;
-      z-index: -100;
-      line-height: 0.5;
       letter-spacing: 2px;
     }
 
-
-
     .text-wrapper img {
-    width: 20%;
-    height: 20%;
-    margin: 0
+    width: 25%;
+    height: 25%;
+    margin: 0;
     }
 
     .text-wrapper h1 {
       font-family: 'Archivo Black', sans-serif;
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin: 1%
     }
 
     .text-wrapper h3 {
     font-family: 'Archivo', sans-serif;
     margin: 1%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     }
 
     .down-arrow {
-      font-size: 2rem;
-      cursor: pointer;
-      margin-top: 25%
+      font-size: 3rem;
+      margin-top: 5%
       }
 
 
