@@ -187,7 +187,7 @@ header nav ul li.active ul a {
   }
 
   header nav ul li {
-    padding: 1% //padding-between-links
+    padding: 1%;
   }
 
   header nav ul li ul li {
@@ -277,7 +277,7 @@ font-size: 1.5rem;
 /*---------------------------------ABOUT PAGE------------------------------------*/
 
 .about {
-  width: 55%;
+  width: 80%;
   margin: 0 auto 0 auto;
   text-align: center;
   line-height: 2;
@@ -293,7 +293,8 @@ font-size: 1.5rem;
   }
 
   .about-description {
-    margin: 0;
+    width: 70%;
+    margin: 0 auto;
     text-align: justify;
     color: #737370;
   }
@@ -302,7 +303,7 @@ font-size: 1.5rem;
 
     #skills {
       position: relative;
-      padding: 5%;
+      padding: 5% 10%;
       text-align: center;
     }
 
@@ -314,7 +315,7 @@ font-size: 1.5rem;
     }
 
     .skills-box{
-      padding: 5% 3%;
+      padding: 5% 5%;
     }
 
     .skill-type {
