@@ -1,0 +1,367 @@
+/*---------------------------------LANDING PAGE------------------------------------*/
+
+.content-wrapper {
+  width: 80%;
+  margin: 3% 10% 3% 10%;
+  padding-bottom: 7.5%;
+}
+
+.content-wrapper img {
+  width: 100%;
+}
+
+.text-wrapper {
+  color: #3c3c3b;
+  width: 100%;
+  margin-top: -35%;
+  text-align: center;
+  z-index: -1;
+  line-height: 0.5;
+  letter-spacing: 2px;
+}
+
+.text-wrapper img {
+width: 12%;
+height: 12%;
+margin: 0
+}
+
+.text-wrapper h1 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 4rem;
+  margin: 1%
+}
+
+.text-wrapper h5 {
+font-family: 'Archivo', sans-serif;
+margin: 1%;
+font-size: 1.5rem;
+}
+
+.down-arrow {
+  color: #3c3c3b;
+  font-size: 3rem;
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+.down-arrow:hover {
+ color: #737370;
+}
+
+/*---------------------------------ABOUT PAGE------------------------------------*/
+
+.about {
+  width: 80%;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  line-height: 2;
+  padding: 5% 0 10% 0;
+  }
+
+  .profilepic {
+   width: 300px
+  }
+
+  .about-heading {
+    margin: 5%;
+  }
+
+  .about-description {
+    width: 65%;
+    margin: 0 auto;
+    text-align: justify;
+    color: #737370;
+  }
+
+  /*---------------------------------SKILLS PAGE------------------------------------*/
+
+    #skills {
+      position: relative;
+      padding: 2.5% 10% 0;
+      text-align: center;
+    }
+
+    .skills-heading {
+      margin: 0;
+    }
+
+    .row-skills {
+    }
+
+    .skills-box{
+      padding: 5% 5%;
+    }
+
+    .skill-type {
+      margin: 5% 0;
+    }
+
+    .skills-description {
+      color: #737370;
+      text-align: justify;
+    }
+
+    .coding_img {
+    width: 125px;
+    height: 150px;
+    }
+
+    .design_img {
+    width: 150px;
+    height: 150px;
+    }
+
+    .marketing_img {
+    width: 100px;
+    height: 150px;
+    }
+
+      /*---------------------------------UP BUTTON------------------------------------*/
+
+
+    .up-arrow {
+    display: block !important;
+    margin: 0 auto 5% !important;
+    cursor: pointer;
+    font-size: 3.5rem;
+    background-color: #3c3c3b;
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    line-height: 50px !important; /*vertically-align*/
+    }
+
+    .up-arrow:hover {
+      color: #737370;
+    }
+
+
+
+
+  /*---------------------------------FOOTER-----------------------------------*/
+
+  footer {
+    position: relative;
+    background-color: #3c3c3b;
+    color: white;
+    text-align: center;
+    padding: 2.5% 0;
+  }
+
+  .footer-link {
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: x-large;
+  }
+
+  .footer-link:hover {
+    color: grey;
+  }
+
+  .copyright {
+  font-size: 0.75rem;
+  padding: 10px;
+  }
+
+
+
+  /*---------------------------------MEDIA QUERIES------------------------------------*/
+
+
+  @media (max-width: 1200px)  {
+    /*------LANDING PAGE-----*/
+
+     .content-wrapper {
+      width: 80%;
+      margin: 10% 10% 10% 10%;
+    }
+
+    .content-wrapper img {
+      width: 100%;
+    }
+
+    .text-wrapper {
+      color: #3c3c3b;
+      width: 100%;
+      margin-top: -40%;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+
+    .text-wrapper img {
+    width: 15%;
+    height: 15%;
+    margin: 0;
+    }
+
+    .text-wrapper h1 {
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 3rem;
+      margin: 1%
+    }
+
+    .text-wrapper h3 {
+    font-family: 'Archivo', sans-serif;
+    margin: 1%;
+    font-size: 1.5rem;
+    }
+
+    .down-arrow {
+      font-size: 3rem;
+      margin-top: 5%
+      }
+
+  }
+
+
+      /*--------------------------MEDIUM DEVICES------------------------*/
+
+  @media (max-width: 768px) {
+
+    /*------LANDING PAGE-----*/
+
+    .content-wrapper {
+      width: 80%;
+      margin: 17.5% 10% 17.5% 10%;
+    }
+
+    .content-wrapper img {
+      width: 100%;
+    }
+
+    .text-wrapper {
+      color: #3c3c3b;
+      width: 100%;
+      margin-top: -40%;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+
+    .text-wrapper img {
+    width: 20%;
+    height: 20%;
+    margin: 0;
+    }
+
+    .text-wrapper h1 {
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 3rem;
+      margin: 1%
+    }
+
+    .text-wrapper h3 {
+    font-family: 'Archivo', sans-serif;
+    margin: 1%;
+    font-size: 1.5rem;
+    }
+
+    .down-arrow {
+      font-size: 3rem;
+      margin-top: 5%
+      }
+
+
+    /*ABOUT*/
+
+    .about {
+      width: 80%;
+      }
+
+    .profilepic {
+     width: 300px
+    }
+
+    .about-description {
+     text-align: justify !important;
+    }
+
+    .about-heading {
+      margin: 10%;
+      font-size: 2.5rem;
+    }
+
+    /*SKILLS*/
+
+    .skills-heading {
+      font-size: 2.5rem;
+      padding: 10%;
+    }
+
+    .skills-box {
+      padding: 1% 5%;
+    }
+
+
+    .up-arrow {
+      margin: 10% auto 15% !important;
+    }
+
+
+    /*--------------------------SMALL DEVICES------------------------*/
+
+  @media (max-width: 600px)  {
+
+  
+    /*------LANDING PAGE-----*/
+
+    .content-wrapper {
+      width: 80%;
+      margin: 40% 10% 40% 10%;
+    }
+
+    .content-wrapper img {
+      /* width: 100%; */
+      width: 0;
+    }
+
+    .text-wrapper {
+      color: #3c3c3b;
+      width: 100%;
+      /* margin-top: -50%; */
+      margin-top: -20%;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+
+    .text-wrapper img {
+    width: 25%;
+    height: 25%;
+    margin: 0;
+    }
+
+    .text-wrapper h1 {
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 3rem;
+      margin: 1%
+    }
+
+    .text-wrapper h3 {
+    font-family: 'Archivo', sans-serif;
+    margin: 1%;
+    font-size: 1.5rem;
+    }
+
+    .down-arrow {
+      font-size: 3rem;
+      margin-top: 5%
+      }
+
+
+      /*ABOUT*/
+
+    .profilepic {
+      margin-top: 15%;
+      width: 250px;
+    }
+
+
+      /*UP-ARROW*/
+
+    .up-arrow {
+      margin: 5% auto 10% !important;
+    }
+
+  }
