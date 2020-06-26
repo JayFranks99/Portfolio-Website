@@ -293,7 +293,7 @@ font-size: 1.5rem;
   }
 
   .about-description {
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
     text-align: justify;
     color: #737370;
@@ -303,7 +303,7 @@ font-size: 1.5rem;
 
     #skills {
       position: relative;
-      padding: 5% 10%;
+      padding: 2.5% 10% 0;
       text-align: center;
     }
 
@@ -341,6 +341,27 @@ font-size: 1.5rem;
     width: 100px;
     height: 150px;
     }
+
+      /*---------------------------------UP BUTTON------------------------------------*/
+
+
+    .up-arrow {
+    display: block !important;
+    margin: 0 auto 5% !important;
+    cursor: pointer;
+    font-size: 3.5rem;
+    background-color: lightgrey;
+    width: 50px;
+    height: 50px;
+    color: #3c3c3b;
+    text-align: center;
+    line-height: 50px !important; /*vertically-align*/
+    }
+
+    .up-arrow:hover {
+      color: #737370;
+    }
+
 
 
 
@@ -478,7 +499,7 @@ font-size: 1.5rem;
     /*ABOUT*/
 
     .about {
-      width: 60%;
+      width: 80%;
       }
 
     .profilepic {
@@ -502,7 +523,12 @@ font-size: 1.5rem;
     }
 
     .skills-box {
-      padding: 1% 10%;
+      padding: 1% 5%;
+    }
+
+
+    .up-arrow {
+      margin: 10% auto 15% !important;
     }
 
 
@@ -575,6 +601,13 @@ font-size: 1.5rem;
     .profilepic {
       margin-top: 15%;
       width: 250px;
+    }
+
+
+      /*UP-ARROW*/
+
+    .up-arrow {
+      margin: 5% auto 10% !important;
     }
 
   }

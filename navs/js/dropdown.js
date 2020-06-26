@@ -21,4 +21,10 @@ $(document).ready(function(){
         scrollTop: $("#about").offset().top
     }, 1000);
 });
+
+$(".up-arrow").click(function() {
+  $('html, body').animate({
+      scrollTop: $("header").offset().top
+  }, 1500);
+});
 })
