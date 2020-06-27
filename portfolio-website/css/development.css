@@ -1,5 +1,126 @@
-.development-heading {
-  margin-top: 2.5%;
+.portfolio-heading {
+  display: block;
+  margin: 0;
+  margin-top: 1%;
   text-align: center;
-  color: red;
 }
+
+  /*---------------------------------BUTTONS------------------------------------*/
+
+  #buttons-section {
+    position: relative;
+    padding: 2.5% 10% 0;
+  }
+
+.buttons-div {
+  text-align: center;
+}
+
+.btn {
+  margin: 0 1%;
+}
+
+/*---------------------------------SWITCHES------------------------------------*/
+.display-none {
+  display: none !important;
+}
+.display-block {
+  display: block !important;
+  z-index: -1;
+  position: relative;
+  padding: 0 10%;
+  text-align: left
+}
+
+  /*---------------------------------DEVELOPMENT PAGE------------------------------------*/
+
+    #development {
+      z-index: -1;
+      position: relative;
+      padding: 0 10%;
+      text-align: left;
+    }
+
+    .development-container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .row-development {
+    margin-right: 0;
+    margin-left: 0px;
+    }
+
+    .development-box{
+      padding: 5% 5%;
+    }
+
+    .development-type {
+      margin: 5% 0;
+    }
+
+    .development-description {
+      color: #737370;
+    }
+
+    .development_img {
+    width: 225px;
+    height: 225px;
+    }
+
+      /*---------------------------------DESIGN PAGE------------------------------------*/
+
+
+      #design {
+        display: none;
+        z-index: -1;
+        position: relative;
+        padding: 0 10%;
+        text-align: left;
+      }
+      /*---------------------------------EDITING PAGE------------------------------------*/
+
+
+      #editing {
+        display: none;
+        z-index: -1;
+        position: relative;
+        padding: 0 10%;
+        text-align: left;
+      }
+      /*---------------------------------ANIMATION PAGE------------------------------------*/
+
+
+      #animation {
+        display: none;
+        z-index: -1;
+        position: relative;
+        padding: 0 10%;
+        text-align: left;
+      }
+
+      /*---------------------------------FOOTER-----------------------------------*/
+
+      footer {
+        position: relative;
+        background-color: #3c3c3b;
+        color: white;
+        text-align: center;
+        padding: 2.5% 0;
+      }
+
+      .footer-link {
+        color: white;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: x-large;
+      }
+
+      .footer-link:hover {
+        color: grey;
+      }
+
+      .copyright {
+      font-size: 0.75rem;
+      padding: 10px;
+      }
