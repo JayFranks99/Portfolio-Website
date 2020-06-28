@@ -36,222 +36,132 @@ p {
 }
 
 
-/*-------------------------NAVIGATION---------------------------*/
+/*-----------------NAVIGATION BAR-------------------*/
 
-header {
-  padding: 1.75% 10%;
+.navbar-container {
+  padding: 2% 15%;
 }
 
-header .branding{
-display: inline-block;
-}
-
-header nav {
-display: inline-block;
-float: right;
-}
-
-header nav ul {
-  margin: 0;
-  padding: 0;
-  display: flex; /* Display links links next to each other */
-}
-
-header nav ul li {
-  list-style: none; /* Remove bullet points */
-  position: relative;
-  padding: 1%
-}
-
-.contact-link {
-  padding-right: 0;
-}
-
-header nav ul li a {
-  display: block; /* link properties */
-  height: 50px;
-  line-height: 50px;
-  padding: 0 15px;
-  text-decoration: none;
-  color: #737370;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-
-header nav ul li a:hover {
-  color: #3c3c3b;
-}
-
-
-header nav ul li a.active { /* Active nav link*/
-  color: #3c3c3b;
-}
-
-.portfolio {
-  cursor: pointer;
-}
-
-.menu-toggle {
+.normal-navbar {
+  display: inline-block;
   float: right;
+  position: relative;
+  left: 5%;
+}
+
+.nav-link {
+ font-size: 15px;
+ text-decoration: none;
+ color: #737370;
+ padding: 20px 0;
+ margin: 0 20px;
+ display: inline-block;
+ position: relative;
+}
+
+.active {
+color: #3c3c3b !important;
+}
+
+.nav-link:hover {
+ color: #3c3c3b;
+}
+
+.nav-link::before {
+ transition: 500ms;
+ height: 2px; /*height of underline*/
+ content: "";
+ position: absolute;
+ background-color: #3c3c3b; /*Colour of link underline*/
+}
+
+.nav-link-animate::before {
+ width: 0;  /*Width of the line*/
+ top: 40px;
+ opacity: 0; /*line opacity invisible before*/
+ /*right:50px; Starting position before hover*/
+}
+
+.nav-link-animate:hover::before {
+ width: 100%; /*Width of the line = fades from 0 to 100%*/
+ left:0; /*How heigh the underline raises up on hover*/
+ opacity: 1; /*line opacity visible on hover*/
+}
+
+.navbar-brand {
+  display: inline-block;
+}
+
+.hamburger {
+  float: right;
+  display: none;  /* HIDE HAMBURGER UNTIL THE DEVICE HITS A SMALLER SCREEN*/
+  margin-top: 1%;
+  margin-right: 5%;
   color: #3c3c3b;
-  line-height: 50px;
-  font-size: 24px;
-  cursor: pointer;
-  display: none; /* Display none to then show with media query */
 }
 
 
-/*----------DROPDOWN MENU---------*/
+/*---------------FULL SCREEN HAMBURGER NAV--------------------*/
 
-  .dropdown-icon {
-    position: relative;
-    left: 12%;
-    bottom: 4%;
-    transition: 0.5s;
-    }
-
-/* Drodown menu list*/
-header nav ul li ul {
-  position: absolute;
+.overlay { /* .myNav (overlay) TARGETED IN JS TO OPEN/CLOSE THE NAV - CHANGING HEIGHT TO 100% TO OPEN NAV, 0% HEIGHT TO CLOSE*/
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
   left: 0;
-  opacity: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s; /* Smooth transition to the opening and closing functions*/
 }
 
-/* Drodown menu list*/
-header nav ul li ul li {
+.overlay-content {
+  position: relative;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-links-overlay {
+  padding: 20px 0;
+  margin: 0 30%;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #737370;
   display: block;
-  width: 200px;
-}
-
-/* Drodown menu list*/
-header nav ul li.active ul {
-  display: block; /*SHOWS DROPDOWN*/
-  opacity: 1;
-  transition: 0.5s;
-}
-
-header nav ul li.active ul a {
-  font-size: 0.7rem;
-}
-
-.myClass{
-  transform: rotate(180deg);
   position: relative;
-  top: 10%;
 }
 
-/*--------------------------------- NAV MEDIA QUERY------------------------------------*/
+.nav-links-overlay:hover{
+  color: #3c3c3b;
+  text-decoration: none;
+}
 
-@media (max-width: 1000px)  {
+.overlay .closebtn {
+  position: absolute;
+  top: 1%;
+  right: 18.5%;
+  font-size: 40px;
+  text-decoration: none !important;
+  color: #3c3c3b;
+}
 
-  /* Display hamburger menu - orignally display:none*/
-  .menu-toggle {
-    display: block;
+@media (max-width: 999px) {
+  .hamburger {
+    display: inline-block;
   }
-  /* Remove links at this width*/
-
-  header nav {
-    position: absolute;
-    width: 100%;
-    height: 100vh; /* Viewport Height */
-    background-color: white;
-    top: 60px;
-    right: 0;
-  }
-
-  header nav.active {
-  right: -100%;
-  }
-
-  header nav ul {
-    display: block;
-    text-align: center;
-  }
-
-  header nav ul li a {
-    padding: 10px 0;
-    font-size: 1.1rem;
-    margin: 0 25%;
-  }
-
-  /*RESPOSNIVE DROPDOWN*/
-
-  header nav ul li.active ul {
-  position: relative;
-  margin: 0;
-  }
-
-  header nav ul li.active ul a {
-  position: relative;
-  font-size: 0.8rem;
-  }
-
-  .dropdown-icon {
-    position: relative;
-    left: 2%;
-  }
-
-  header nav ul li {
-    padding: 1%;
-  }
-
-  header nav ul li ul li {
-    width: 100%;
-  }
-
-  header nav ul {
-    position: relative;
-    top: 25%;
-  }
-
-  .sub-menu-items {
+  .normal-navbar {
     display: none;
   }
+}
 
-  .sub-menu-items .active {
-    display: block;
-  }
-
-  .myClass2 {
-  top: 3%;
-  transition: 0.5s;
-  opacity: 1;
-  }
-
-  .myClass3 {
-    display: none;
-  }
-
-  .overflow {
-    overflow: hidden;
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
   }
 }
 
-/*--------------------------MEDIUM DEVICES------------------------*/
-
-@media (max-width: 768px) {
-
-
-.myClass2 {
-top: 5%;
-transition: 0.5s;
-opacity: 1;
-}
-
-/*--------------------------SMALL DEVICES------------------------*/
-
-@media (max-width: 600px)  {
-
-.myClass2 {
-top: 7%;
-transition: 0.5s;
-opacity: 1;
-}
-
-header nav ul li a {
-  font-size: 1rem;
-}
-
-header nav ul li.active ul a {
-  font-size: 0.8rem;
-}
+/*-------------END OF NAV CODE-----------------*/

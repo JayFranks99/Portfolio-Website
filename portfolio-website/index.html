@@ -31,31 +31,31 @@
 
   <body>
 
-    <!-- NAVIGATION HTML -->
-      <header>
+    <!--  Navigation -->
 
-        <div class="branding"> <a href="index.html"><img src="images/jf-logo-alternative.png" width=40px height=40px alt="branding"></a></div>
+    <div class="navbar-container">
 
-        <nav class="active">
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+      <a class="navbar-brand" href="index.html"> <img src="images/jf-logo-alternative.png" width="40" height="40" alt="branding"> </a>
 
-            <li class="sub-menu"><a class="portfolio">Portfolio<i class="fa fa-sort-desc dropdown-icon" aria-hidden="true"></i></a> <!-- ul list inside of an ul list -->
-              <ul class="sub-menu-items">
-                <li><a href="development.html">Development</a></li>
-                <li><a href="design.html">Design</a></li>
-                <li><a href="editing.html">Editing</a></li>
-                <li><a href="animation.html">Animation</a></li>
-              </ul>
-            </li>
+      <div class="normal-navbar">
+        <a class="nav-link nav-link-animate active" href="index.html">Home</a>
+        <a class="nav-link nav-link-animate" href="portfolio.html">Portfolio</a>
+        <a class="nav-link nav-link-animate" href="contact.html">Contact</a>
+      </div>
 
-            <li><a href="#">CV</a></li>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a class="nav-links-overlay active" href="index.html" onclick="closeNav()">Home</a>
+          <a class="nav-links-overlay" href="portfolio.html">Portfolio</a>
+          <a class="nav-links-overlay" href="contact.html" onclick="closeNav()">Contact</a>
+        </div>
+      </div>
+      <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
 
-            <li><a class="contact-link" href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="menu-toggle"> <i class="fa fa-bars" aria-hidden="true"> </i> </div>
-      </header>
+    <!--  END OF NAV -->
+
 
   <!-- LANDING PAGE -->
 

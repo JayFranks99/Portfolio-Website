@@ -1,19 +1,20 @@
+function openNav() {
+  document.getElementById("myNav").style.height = "100%"; //expand from 0% to 100%
+  document.getElementById("myNav").style.overflow = "hidden"; //prevents scorlling
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%"; //reduce from 100% to 0%
+}
+
 $(document).ready(function(){
   $('.menu-toggle').click(function(){
     $('nav').toggleClass('active');
     $('body').toggleClass('overflow');
-    $('.logo-landing').toggleClass('myClass3');
+    $('.logo-landing').toggleClass('display-none'); //hide/show logo on homepage
+    $('#buttons-section').toggleClass('display-none'); //hide/show buttons on portfolio
   });
 
-  $('ul li').click(function () {
-    $(this).toggleClass('active');
-  });
-
-  $('.portfolio').click(function () {
-    $('.dropdown-icon').toggleClass('myClass');
-    $('header nav ul').toggleClass('myClass2');
-    $('.sub-menu-items .active').toggleClass('.sub-menu-items .active');
-  });
 
 //SMOOTH ANIMATION ON CLICK - DOWN
   $(".down-arrow").click(function() {
@@ -26,7 +27,7 @@ $(document).ready(function(){
 
 $(".up-arrow").click(function() {
   $('html, body').animate({
-      scrollTop: $("header").offset().top
+      scrollTop: $(".navbar-container").offset().top
   }, 1500);
 });
 
@@ -61,6 +62,11 @@ $('.animation-switch').click(function () {
   $('#development').attr('class','display-none');
   $('#editing').attr('class','display-none');
   $('#design').attr('class','display-none');
+});
+
+//BUTTON DEFUALT COLOUR SWITCH
+$('.btn').click( function() {
+$('.development-switch').attr('class',' btn btn-secondary');
 });
 
 })
