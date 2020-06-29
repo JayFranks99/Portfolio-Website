@@ -32,12 +32,15 @@
 }
 
 .btn:focus{
-  background-color: #3c3c3b !important;
   box-shadow: none;
 }
 
 .default-switch {
   background-color: #3c3c3b !important;
+}
+
+.selected {
+  background-color: #3c3c3b;
 }
 
 /*---------------------------------SWITCHES------------------------------------*/
@@ -57,33 +60,58 @@
     #development {
       z-index: -1;
       position: relative;
-      padding: 0 10%;
-      text-align: left;
+      padding: 0 15%;
+      text-align: center;
     }
 
     .development-container {
-      padding-right: 0;
+    margin: 5% 0;
+    padding: 0;
     }
 
     .row-development {
-    margin-left: 0;
+    margin: 0;
+    padding: 0;
     }
 
     .development-box{
-      padding: 5% 5%;
+    margin: 0;
+    padding: 0;
     }
 
     .development-type {
-      margin: 5% 0;
+      text-align: left;
+      margin: 2% 10%;
     }
 
     .development-description {
       color: #737370;
+      text-align: left;
+      margin: 0 10%;
+      margin-bottom: 7.5%;
     }
 
     .development_img {
-    width: 225px;
-    height: 225px;
+    width: 250px;
+    height: 200px;
+    }
+
+
+    .up-arrow {
+    display: block !important;
+    margin: 0 auto 5% !important;
+    cursor: pointer;
+    font-size: 2.5rem;
+    background-color: #3c3c3b;
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    line-height: 40px !important; /*vertically-align*/
+    }
+
+    .up-arrow:hover {
+      color: #737370;
     }
 
       /*---------------------------------DESIGN PAGE------------------------------------*/
@@ -94,7 +122,7 @@
         z-index: -1;
         position: relative;
         padding: 0 10%;
-        text-align: left;
+        text-align: center;
       }
       /*---------------------------------EDITING PAGE------------------------------------*/
 
@@ -104,7 +132,7 @@
         z-index: -1;
         position: relative;
         padding: 0 10%;
-        text-align: left;
+        text-align: center;
       }
       /*---------------------------------ANIMATION PAGE------------------------------------*/
 
@@ -114,7 +142,7 @@
         z-index: -1;
         position: relative;
         padding: 0 10%;
-        text-align: left;
+        text-align: center;
       }
 
       /*---------------------------------FOOTER-----------------------------------*/

@@ -24,7 +24,6 @@ $(document).ready(function(){
 });
 
 //SMOOTH ANIMATION ON CLICK - UP
-
 $(".up-arrow").click(function() {
   $('html, body').animate({
       scrollTop: $(".navbar-container").offset().top
@@ -64,9 +63,11 @@ $('.animation-switch').click(function () {
   $('#design').attr('class','display-none');
 });
 
-//BUTTON DEFUALT COLOUR SWITCH
-$('.btn').click( function() {
-$('.development-switch').attr('class',' btn btn-secondary');
+//BUTTON COLOUR SWITCH
+$('.btn-secondary').click(function () {
+    $('.development-switch').attr('class',' btn btn-secondary'); //Removing default button colour
+    $('.btn-secondary').removeClass('selected'); //Removing the selected button bg colour
+    $(this).addClass('selected'); //Adding a bg colour to the selected button
 });
 
-})
+}); //end of functions

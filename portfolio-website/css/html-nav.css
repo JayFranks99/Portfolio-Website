@@ -39,22 +39,22 @@ p {
 /*-----------------NAVIGATION BAR-------------------*/
 
 .navbar-container {
-  padding: 2% 15%;
+  padding: 2% 10%;
 }
 
 .normal-navbar {
   display: inline-block;
   float: right;
   position: relative;
-  left: 5%;
 }
 
 .nav-link {
  font-size: 15px;
  text-decoration: none;
  color: #737370;
- padding: 20px 0;
- margin: 0 20px;
+ padding: 20px 30px;
+ padding-right: 0;
+ margin: 0;
  display: inline-block;
  position: relative;
 }
@@ -65,27 +65,6 @@ color: #3c3c3b !important;
 
 .nav-link:hover {
  color: #3c3c3b;
-}
-
-.nav-link::before {
- transition: 500ms;
- height: 2px; /*height of underline*/
- content: "";
- position: absolute;
- background-color: #3c3c3b; /*Colour of link underline*/
-}
-
-.nav-link-animate::before {
- width: 0;  /*Width of the line*/
- top: 40px;
- opacity: 0; /*line opacity invisible before*/
- /*right:50px; Starting position before hover*/
-}
-
-.nav-link-animate:hover::before {
- width: 100%; /*Width of the line = fades from 0 to 100%*/
- left:0; /*How heigh the underline raises up on hover*/
- opacity: 1; /*line opacity visible on hover*/
 }
 
 .navbar-brand {
