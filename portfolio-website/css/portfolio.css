@@ -60,7 +60,7 @@
     #development {
       z-index: -1;
       position: relative;
-      padding: 0 15%;
+      padding: 0 17.5%;
       text-align: center;
     }
 
@@ -80,39 +80,24 @@
     }
 
     .development-type {
+      font-size: 1.4rem;
       text-align: left;
-      margin: 2% 10%;
+      margin: 2% 12%;
     }
 
     .development-description {
+      font-size: 0.95rem;
       color: #737370;
       text-align: left;
-      margin: 0 10%;
+      margin: 0 12%;
       margin-bottom: 7.5%;
     }
 
     .development_img {
-    width: 250px;
+    width: 220px;
     height: 200px;
     }
 
-
-    .up-arrow {
-    display: block !important;
-    margin: 0 auto 5% !important;
-    cursor: pointer;
-    font-size: 2.5rem;
-    background-color: #3c3c3b;
-    width: 40px;
-    height: 40px;
-    color: white;
-    text-align: center;
-    line-height: 40px !important; /*vertically-align*/
-    }
-
-    .up-arrow:hover {
-      color: #737370;
-    }
 
       /*---------------------------------DESIGN PAGE------------------------------------*/
 
@@ -121,7 +106,7 @@
         display: none;
         z-index: -1;
         position: relative;
-        padding: 0 10%;
+        padding: 0 17.5%;
         text-align: center;
       }
       /*---------------------------------EDITING PAGE------------------------------------*/
@@ -131,7 +116,7 @@
         display: none;
         z-index: -1;
         position: relative;
-        padding: 0 10%;
+        padding: 0 17.5%;
         text-align: center;
       }
       /*---------------------------------ANIMATION PAGE------------------------------------*/
@@ -141,7 +126,7 @@
         display: none;
         z-index: -1;
         position: relative;
-        padding: 0 10%;
+        padding: 0 17.5%;
         text-align: center;
       }
 
