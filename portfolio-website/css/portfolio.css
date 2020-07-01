@@ -13,17 +13,13 @@
   text-align: center;
 }
 
-.buttons-div-left {
-  display: inline-block;
-}
-
-.buttons-div-right {
- display: inline-block;
-}
-
 .btn {
+margin: 0 1%;
 }
 
+#buttons-section2 {
+  display: none;
+}
 
 
 .btn:hover {
@@ -53,12 +49,10 @@
 .display-none {
   display: none !important;
 }
+
 .display-block {
   display: block !important;
   z-index: -1;
-  position: relative;
-  padding: 0 10%;
-  text-align: left
 }
 
   /*---------------------------------DEVELOPMENT PAGE------------------------------------*/
@@ -66,44 +60,23 @@
     #development {
       z-index: -1;
       position: relative;
-      padding: 0 17.5%;
-      text-align: center;
     }
 
     .development-container {
     margin: 5% 0;
-    padding: 0;
-    }
-
-    .row-development {
-    margin: 0;
-    padding: 0;
+    padding: 0 22.5%;
     }
 
     .development-box{
-    margin: 0;
-    padding: 0;
+      text-align: left;
+      margin: 1% auto;
+      padding: 0 2.5%;
     }
 
-    .development-type {
-      width: 76%;
-      margin: 2% auto;
-      font-size: 1.4rem;
-      text-align: left;
-    }
-
-    .development-description {
-      width: 76%;
-      margin: 0 auto;
-      font-size: 0.95rem;
-      color: #737370;
-      text-align: left;
-      margin-bottom: 7.5%;
-    }
 
     .development_img {
-    width: 220px;
-    height: 200px;
+      width: 100%;
+      margin-bottom: 2%;
     }
 
 
@@ -112,30 +85,20 @@
 
       #design {
         display: none;
-        z-index: -1;
-        position: relative;
-        padding: 0 17.5%;
-        text-align: center;
       }
+
       /*---------------------------------EDITING PAGE------------------------------------*/
 
 
       #editing {
         display: none;
-        z-index: -1;
-        position: relative;
-        padding: 0 17.5%;
-        text-align: center;
       }
+
       /*---------------------------------ANIMATION PAGE------------------------------------*/
 
 
       #animation {
         display: none;
-        z-index: -1;
-        position: relative;
-        padding: 0 17.5%;
-        text-align: center;
       }
 
       /*---------------------------------FOOTER-----------------------------------*/
@@ -166,29 +129,37 @@
 
 
 
-
-
-
-      @media (max-width: 766px)  {
-
-        /*--------------------------MEDIUM DEVICES------------------------*/
+  /*--------------------------MEDIUM DEVICES------------------------*/
+    @media (max-width: 766px)  {
 
     }
 
-      /*--------------------------SMALL DEVICES------------------------*/
+
+
+    /*--------------------------SMALL DEVICES------------------------*/
 
     @media (max-width: 600px)  {
-      .buttons-div {
+
+      #buttons-section {
+        display: none;
+      }
+
+      #buttons-section2 {
+        display: block;
+        position: relative;
+      }
+
+      .buttons-div2 {
         margin: 7.5% auto;
         text-align: center;
       }
 
-      .buttons-div-left {
+      .buttons-left {
         display: block;
         padding-bottom: 2.5%;
       }
 
-      .buttons-div-right {
+      .buttons-right {
        display: block;
       }
 
@@ -197,4 +168,5 @@
         width: 35%;
         font-size: 0.9rem;
       }
-  }
+
+    }
