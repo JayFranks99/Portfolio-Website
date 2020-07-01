@@ -7,18 +7,24 @@
 
   /*---------------------------------BUTTONS------------------------------------*/
 
-  #buttons-section {
-    position: relative;
-    padding: 2.5% 10% 0;
-  }
 
 .buttons-div {
+  margin: 2.5% auto;
   text-align: center;
 }
 
-.btn {
-  margin: 0 1%;
+.buttons-div-left {
+  display: inline-block;
 }
+
+.buttons-div-right {
+ display: inline-block;
+}
+
+.btn {
+}
+
+
 
 .btn:hover {
   background-color: #3c3c3b;
@@ -80,16 +86,18 @@
     }
 
     .development-type {
+      width: 76%;
+      margin: 2% auto;
       font-size: 1.4rem;
       text-align: left;
-      margin: 2% 12%;
     }
 
     .development-description {
+      width: 76%;
+      margin: 0 auto;
       font-size: 0.95rem;
       color: #737370;
       text-align: left;
-      margin: 0 12%;
       margin-bottom: 7.5%;
     }
 
@@ -155,3 +163,38 @@
       font-size: 0.75rem;
       padding: 10px;
       }
+
+
+
+
+
+
+      @media (max-width: 766px)  {
+
+        /*--------------------------MEDIUM DEVICES------------------------*/
+
+    }
+
+      /*--------------------------SMALL DEVICES------------------------*/
+
+    @media (max-width: 600px)  {
+      .buttons-div {
+        margin: 7.5% auto;
+        text-align: center;
+      }
+
+      .buttons-div-left {
+        display: block;
+        padding-bottom: 2.5%;
+      }
+
+      .buttons-div-right {
+       display: block;
+      }
+
+      .btn {
+        margin: 0 1% !important;
+        width: 35%;
+        font-size: 0.9rem;
+      }
+  }
