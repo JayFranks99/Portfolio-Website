@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <title>Jay Franks</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="test-3.ico">
+
+
+    <!-- STYLESHEETS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/html-nav.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <!--  JavaScript Bootstrap src -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/d3a2dc6aff.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+
+    <!--  Navigation -->
+
+    <div class="navbar-container">
+
+      <a class="navbar-brand" href="index.html"> <img src="images/jf-logo-alternative.png" width="40" height="40" alt="branding"> </a>
+
+      <div class="normal-navbar">
+        <a class="nav-link nav-link-animate active" href="index.html">Home</a>
+        <a class="nav-link nav-link-animate" href="portfolio.html">Portfolio</a>
+        <a class="nav-link nav-link-animate" href="contact.html">Contact</a>
+      </div>
+
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a class="nav-links-overlay active" href="index.html" onclick="closeNav()">Home</a>
+          <a class="nav-links-overlay" href="portfolio.html">Portfolio</a>
+          <a class="nav-links-overlay" href="contact.html" onclick="closeNav()">Contact</a>
+        </div>
+      </div>
+      <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <!--  END OF NAV -->
+
+
+  <!-- LANDING PAGE -->
+
+  <section id="home">
+
+    <div class="content-wrapper">
+
+      <img src="images/backg-test-3.png" alt="">
+
+      <div class="text-wrapper">
+
+        <img src="images/logo-landing.png" alt="">
+
+        <h1> JAY FRANKS </h1>
+
+          <h5> Digital Media Graduate </h5>
+
+         <i class="fa fa-angle-down down-arrow" aria-hidden="true"></i>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+    <hr size=”3”>
+
+  <!-- ABOUT PAGE -->
+
+  <section id="about">
+
+    <div class="middle-container">
+      <div class="about">
+        <img class="profilepic" src="images/profile-img-square.png" alt="profile_picture">
+        <h2 class="about-heading">About</h2>
+        <p class="about-description">I am a confident, enthusiastic postgraduate Digital Media student with skills in web and app development and design currently looking for full time employment. Works effectively in a team and independently. Hard
+          working and conscientious attitude towards work. </p>
+      </div>
+
+  </section>
+
+
+    <hr size=”3”>
+
+  <!-- SKILLS PAGE -->
+
+      <section id="skills">
+
+        <div class="container-fluid skills-container">
+
+          <h2 class="skills-heading">Skills</h2>
+
+          <div class="row row-skills">
+
+            <div class="col-lg-4 col-md-12 col-sm-12 skills-box">
+              <img class="coding_img" src="https://image.flaticon.com/icons/svg/2920/2920242.svg" alt="coding_img">
+              <h3 class="skill-type">Development</h3>
+              <p class="skills-description">From my time at the University of Leeds I have gained a passion for developing websites and apps. From this, I have skills in HTML, CSS, JS, PHP, SQL and Android Development.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 skills-box">
+              <img class="design_img" src="https://image.flaticon.com/icons/svg/2928/2928688.svg" alt="">
+              <h3 class="skill-type">Design</h3>
+              <p class="skills-description">I have gained strong design skills with this being a consistent part of my digital media course. My portfolio demonstrates that I have the ability to design and create for a variety of purposes.</p>
+            </div>
+
+
+            <div class="col-lg-4 col-md-12 col-sm-12 skills-box">
+              <img class="marketing_img" src="https://image.flaticon.com/icons/svg/839/839896.svg" alt="">
+                <h3 class="skill-type">Marketing</h3>
+              <p class="skills-description">Studying digital media has given me the practical and analytical skills that are required in digital marketing. I can engage audiences creatively through digital products in a professional manner.</p>
+            </div>
+
+    </section>
+
+      <i class="fa fa-angle-up up-arrow" aria-hidden="true"></i>
+
+    <!-- FOOTER-->
+
+        <footer>
+          <div class="bottom-container">
+            <a class="footer-link" href="https://www.linkedin.com/in/jayfranks99/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a class="footer-link" href="https://github.com/JayFranks99"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+            <a class="footer-link" href="https://join.skype.com/invite/nOx3UhSI0x03"><i class="fa fa-skype" aria-hidden="true"></i></a>
+            <p class="copyright">© 2020 Jay Franks.</p>
+          </div>
+        </footer>
+
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/index.js" charset="utf-8"></script>
+
+  </body>
+</html>

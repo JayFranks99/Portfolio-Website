@@ -1,0 +1,146 @@
+body {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  font-family: 'Archivo Black', sans-serif;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #3c3c3b;
+    border-width: 5px;
+    width: 10%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+ }
+
+ h1, h2, h3 {
+   font-weight: bold;
+   font-family: 'Archivo Black', sans-serif;
+ }
+
+ h4, h5, h6 {
+ font-family: 'Archivo', sans-serif;
+ }
+
+ h2 {
+   font-size: 2.5rem;
+ }
+
+p {
+   font-family: 'Archivo', sans-serif;
+}
+
+
+/*-----------------NAVIGATION BAR-------------------*/
+
+.navbar-container {
+  padding: 2% 10%;
+}
+
+.normal-navbar {
+  display: inline-block;
+  float: right;
+  position: relative;
+}
+
+.nav-link {
+ font-size: 15px;
+ text-decoration: none;
+ color: #737370;
+ padding: 20px 30px;
+ padding-right: 0;
+ margin: 0;
+ display: inline-block;
+ position: relative;
+}
+
+.active {
+color: #3c3c3b !important;
+}
+
+.nav-link:hover {
+ color: #3c3c3b;
+}
+
+.navbar-brand {
+  display: inline-block;
+}
+
+.hamburger {
+  float: right;
+  display: none;  /* HIDE HAMBURGER UNTIL THE DEVICE HITS A SMALLER SCREEN*/
+  margin-top: 1%;
+  margin-right: 5%;
+  color: #3c3c3b;
+}
+
+
+/*---------------FULL SCREEN HAMBURGER NAV--------------------*/
+
+.overlay { /* .myNav (overlay) TARGETED IN JS TO OPEN/CLOSE THE NAV - CHANGING HEIGHT TO 100% TO OPEN NAV, 0% HEIGHT TO CLOSE*/
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s; /* Smooth transition to the opening and closing functions*/
+}
+
+.overlay-content {
+  position: relative;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-links-overlay {
+  padding: 20px 0;
+  margin: 0 30%;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #737370;
+  display: block;
+  position: relative;
+}
+
+.nav-links-overlay:hover{
+  color: #3c3c3b;
+  text-decoration: none;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 1%;
+  right: 18.5%;
+  font-size: 40px;
+  text-decoration: none !important;
+  color: #3c3c3b;
+}
+
+@media (max-width: 999px) {
+  .hamburger {
+    display: inline-block;
+  }
+  .normal-navbar {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+/*-------------END OF NAV CODE-----------------*/

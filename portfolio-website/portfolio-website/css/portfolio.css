@@ -1,0 +1,301 @@
+html body {
+  height: 100%;
+}
+
+.portfolio-heading {
+  display: block;
+  margin: 0;
+  margin-top: 1%;
+  text-align: center;
+}
+
+  /*---------------------------------BUTTONS------------------------------------*/
+
+
+.buttons-div {
+  margin: 2.5% auto;
+  text-align: center;
+}
+
+.btn {
+margin: 0 1%;
+}
+
+#buttons-section2 {
+  display: none;
+}
+
+
+.btn:hover {
+  background-color: #3c3c3b;
+  transition: 0.5s;
+}
+
+.btn:active{
+  position: relative;
+  top: 1px;
+  box-shadow: none !important;
+}
+
+.btn:focus{
+  box-shadow: none;
+}
+
+.default-switch {
+  background-color: #3c3c3b !important;
+}
+
+.selected {
+  background-color: #3c3c3b;
+}
+
+/*---------------------------------SWITCHES------------------------------------*/
+.display-none {
+  display: none !important;
+}
+
+.display-block {
+  display: block !important;
+  z-index: -1;
+}
+
+  /*---------------------------------DEVELOPMENT PAGE------------------------------------*/
+
+    #development {
+      z-index: 1;
+      position: relative;
+    }
+
+    .development-container {
+    margin: 5% 0;
+    padding: 0 20%;
+    }
+
+    .development-box{
+      text-align: left;
+      margin: 1% auto;
+      padding: 0 2.5%;
+    }
+
+
+    .development_img {
+      margin-bottom: 2%;
+      cursor: pointer;
+    }
+
+      /*------------------------POP UP------------------------------*/
+
+      .bg-popup {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+      }
+
+      .popup-content {
+        width: 400px;
+        height: 50%;
+        background-color: white;
+        border-radius: 5px;
+        text-align: center;
+        padding: 30px;
+        position: relative;
+      }
+
+      .img-popup {
+        width: 200px;
+        height: 175px;
+        margin-top: 25px;
+      }
+
+      .close-button {
+        position: absolute;
+        top: -5px;
+        right: 5%;
+        transform: rotate(45deg);
+        cursor: pointer;
+        font-size: 3rem;
+      }
+
+    .motive-buttons {
+      padding: 5% 0;
+    }
+
+    .btn-dark {
+      width: 25%;
+      background-color:#3c3c3b;
+      border: none;
+    }
+
+    .btn-dark:hover {
+      background-color: grey;
+      border: none;
+    }
+
+
+      /*---------------------------------DESIGN PAGE------------------------------------*/
+
+
+      #design {
+        display: none;
+      }
+
+      /*---------------------------------EDITING PAGE------------------------------------*/
+
+
+      #editing {
+        display: none;
+      }
+
+      /*---------------------------------ANIMATION PAGE------------------------------------*/
+
+
+      #animation {
+        display: none;
+      }
+
+      /*---------------------------------FOOTER-----------------------------------*/
+
+      footer {
+        position: relative;
+        background-color: #3c3c3b;
+        color: white;
+        text-align: center;
+        padding: 2.5% 0;
+      }
+
+      .footer-link {
+        color: white;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: x-large;
+      }
+
+      .footer-link:hover {
+        color: grey;
+      }
+
+      .copyright {
+      font-size: 0.75rem;
+      padding: 10px;
+      }
+
+
+
+  /*--------------------------MEDDIA QUERIES------------------------*/
+
+
+  /*----------LARGE DEVICES-----*/
+
+      @media (min-width: 1700px)  {
+        .development-box {
+          text-align: center;
+        }
+
+      }
+
+
+      @media (max-width: 1300px)  {
+        .development-container {
+        padding: 0 17.5%;
+        }
+
+      }
+
+
+      @media (max-width: 1150px)  {
+        .development-container {
+        padding: 0 12.5%;
+        }
+
+      }
+
+      /*--------BREAKS INTO 2 PER ROW ----------------------*/
+
+      @media (max-width: 991px)  {
+        .development-box {
+          text-align: center;
+        }
+
+        .development-description {
+          width: 85%;
+          margin: auto;
+          margin-bottom: 5%;
+        }
+
+
+
+  /*--------------------------MEDIUM DEVICES------------------------*/
+
+  /*--------BREAKS INTO 1 PER ROW ----------------------*/
+
+    @media (max-width: 767px)  {
+
+      #development {
+        z-index: -1;
+        position: relative;
+      }
+
+      .development-container {
+      margin: 5% 0;
+      padding: 0 22.5%;
+      }
+
+      .development-box{
+        text-align: center;
+        margin: 1% auto;
+        padding: 0 2.5%;
+      }
+
+      .development-description {
+        width: 85%;
+        margin: auto;
+        margin-bottom: 5%;
+      }
+
+
+      .development_img {
+        margin-bottom: 2%;
+      }
+
+    }
+
+    /*--------------------------SMALL DEVICES------------------------*/
+
+    @media (max-width: 600px)  {
+
+      #buttons-section {
+        display: none;
+      }
+
+      #buttons-section2 {
+        display: block;
+        position: relative;
+      }
+
+      .buttons-div2 {
+        margin: 7.5% auto;
+        text-align: center;
+      }
+
+      .buttons-left {
+        display: block;
+        padding-bottom: 2.5%;
+      }
+
+      .buttons-right {
+       display: block;
+      }
+
+      .btn {
+        margin: 0 1% !important;
+        width: 35%;
+        font-size: 0.9rem;
+      }
+
+    }
