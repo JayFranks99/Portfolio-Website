@@ -1,3 +1,7 @@
+html body {
+  height: 100%;
+}
+
 .portfolio-heading {
   display: block;
   margin: 0;
@@ -58,13 +62,13 @@ margin: 0 1%;
   /*---------------------------------DEVELOPMENT PAGE------------------------------------*/
 
     #development {
-      z-index: -1;
-      position: relative;
+      z-index: 1 !important;
+      position: relative !important;
     }
 
     .development-container {
     margin: 5% 0;
-    padding: 0 22.5%;
+    padding: 0 20%;
     }
 
     .development-box{
@@ -76,6 +80,70 @@ margin: 0 1%;
 
     .development_img {
       margin-bottom: 2%;
+      cursor: pointer;
+    }
+
+    .development_img:hover {
+      transform: scale(1.02);
+      transition: 0.2s;
+    }
+
+      /*------------------------POP UP------------------------------*/
+
+      .bg-popup {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+      }
+
+      .popup-content {
+        width: 400px;
+        height: 350px;
+        background-color: white;
+        border-radius: 5px;
+        text-align: center;
+        padding: 30px;
+        position: relative;
+      }
+
+      .popup-content h3 {
+        padding: 2% 0;
+      }
+
+      .img-popup {
+        width: 200px;
+        height: 175px;
+        margin-top: 25px;
+      }
+
+      .close-button {
+        position: absolute;
+        top: -5px;
+        right: 5%;
+        transform: rotate(45deg);
+        cursor: pointer;
+        font-size: 3rem;
+      }
+
+    .motive-buttons {
+      padding: 0% 0;
+    }
+
+    .btn-dark {
+      width: 25%;
+      background-color:#3c3c3b;
+      border: none;
+    }
+
+    .btn-dark:hover {
+      background-color: grey;
+      border: none;
     }
 
 

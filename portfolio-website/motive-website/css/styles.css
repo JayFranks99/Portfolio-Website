@@ -1,0 +1,277 @@
+/* ---------------------HTML ELEMENTS------------------------- */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+
+/* ---------------------NAVIGATION------------------------- */
+nav {
+background-color: #0095b7;
+color:white;
+padding-bottom: 4rem !important;
+}
+
+/* Hover state of navigation links*/
+a:hover {
+color: #037b96;
+}
+
+/* Each indivudal navigation link*/
+.nav-item {
+padding: 0 3.5%;
+font-size:1.1rem;
+}
+
+/* Brand part of navigation e.g motive*/
+.navbar-brand {
+  font-size: 2rem;
+  font-family: Orbitron;
+}
+
+/* REMOVING BORDER FROM HAMBURGER ICON*/
+.navbar-dark .navbar-toggler {
+border-style: none;
+}
+
+/* REMOVING BORDER COLOR WHEN HAMGBURGER IS CLICKED ON */
+btn:focus, a:focus{
+outline: none;
+}
+
+.navbar-toggler:focus{
+outline: none;
+box-shadow: none;
+}
+
+
+/* ---------------------TITLE SECTION------------------------- */
+
+#title {
+  background-color: #0095b7;
+  color: white;
+  padding: 3% 12.5% 6%;
+}
+
+.title-leftsection {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 2.5%;
+  margin: 5% 0;
+  text-align: left;
+}
+
+.title-rightsection {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.row {
+  padding: 0 16px;
+  margin: 0;
+}
+
+/* IOS BUTTON */
+
+.btn-outline-primary {
+    color: white;
+    background-color: transparent;
+    background-image: none;
+    border-color: white;
+    margin-top: 5%;
+}
+
+.btn-outline-primary:hover{
+  color: #037b96;
+  background-color: #0095b7;
+  border-color: #037b96;
+}
+
+.btn-outline-primary:active {
+  color: #037b96;
+	position:relative;
+	top:1px;
+}
+
+/* ANDROID BUTTON*/
+
+.btn-light {
+  color: #0095b7;
+  margin-top: 5%;
+  margin-left: 0;
+  margin-right: 2.5%;
+}
+
+
+.btn-light:hover{
+  color: #037b96;
+}
+
+.btn-light:active {
+  color: #0095b7 !important;
+  position:relative;
+	top:1px;
+}
+
+/* PHONE IMAGE */
+
+.phone-image {
+  width: 55%;
+  margin-bottom: 0;
+  margin-left: 30%;
+  transform: rotate(22.5deg);
+  position: absolute;
+  padding-top: 5%;
+  right: 20%;
+  }
+
+
+/* ---------------------FEATURES SECTION------------------------- */
+
+#features {
+  background-color: white;
+  color: #0095b7;
+  position: relative;
+  padding: 1.5% 12.5%;
+  text-align: center !important;
+}
+
+  .row-features {
+    padding: 5% 0;
+  }
+
+  .features-box{
+    padding: 5% 2%;
+  }
+
+  .features-description {
+    color: #a6a6a6;
+  }
+
+  .icons {
+    margin-bottom: 1rem;
+  }
+
+  .icons:hover {
+  color: #037b96;
+  }
+
+/* ---------------------TESTIMONIALS SECTION------------------------- */
+
+#testimonials {
+  background-color: #0095b7;
+  color: white;
+  padding: 2.5% 0;
+}
+
+.testimonials-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 5% 12.5%;
+}
+
+
+/* ---------------------CALL TO ACTION SECTION------------------------- */
+
+#cta {
+  background-color: white;
+  color: #0095b7;
+  padding: 9% 12.5%;
+}
+
+/* ANDROID BUTTON CTA*/
+.btn-primary {
+  color: white;
+  margin: 1%;
+  background-color: #0095b7;
+ }
+
+/* APPLE BUTTON CTA*/
+.btn-outline-info {
+    color: #0095b7;
+    border-color: #0095b7;
+    margin: 1%;
+}
+
+.cta-heading {
+ margin-bottom: 2.5%;
+ font-size: 2.25rem;
+ margin: 0 auto 2.5%;
+}
+
+
+/* ---------------------FOOTER SECTION------------------------- */
+
+footer {
+  background-color:#0095b7 ;
+  color:white ;
+  padding: 7.5% 0;
+}
+
+.social-icon {
+  color: white;
+  padding: 0.5%;
+}
+
+.social-icon:hover {
+text-decoration: none;
+}
+.footer-text {
+  margin-top: 1%;
+  font-size:0.7rem;
+}
+
+/* ---------------------MEDIA QUERIES------------------------- */
+
+
+/* WHEN THE VIEWPORT HITS 999PX DISPLAY THIS CONTENT*/
+
+@media (max-width: 999px) {
+
+  .nav-item {
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .nav-link {
+    border-bottom: solid 0.5px white;
+  }
+
+
+  #title {
+  }
+
+
+  .intro-container {
+    padding: 3% 15%;
+  }
+
+  .phone-image {
+  position: static;
+  padding-bottom: 0;
+  transform: none;
+  margin-left: 0;
+  width: 50%
+  }
+
+  .title-leftsection {
+  margin: 0;
+  padding: 5% 0;
+  }
+
+
+  .title-rightsection {
+  padding: 5% 0;
+  }
+
+}

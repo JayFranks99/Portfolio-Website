@@ -71,3 +71,15 @@ $('.btn-secondary').click(function () {
 });
 
 }); //end of functions
+
+
+//motive image click pop up
+$('.motive').click(function () {
+  $('.bg-popup').css( "display", "flex" );
+  $('.bg-popup').css( "z-index", "5" );
+});
+
+//closing pop up
+$('.close-button').click(function () {
+  $('.bg-popup').css("display", "none" );
+});
