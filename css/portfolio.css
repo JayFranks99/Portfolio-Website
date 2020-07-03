@@ -99,12 +99,12 @@ margin: 0 1%;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 150px; /* Location of the box */
+  padding-top: 125px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  /* overflow: auto; /* Enable scroll if needed */ */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
@@ -119,12 +119,13 @@ margin: 0 1%;
   border-radius: 0 !important;
 }
 
+/* TALL IMAGES CSS - TOGGLE IN JQUERY */
 .heightImage {
   max-width: 250px;
 }
 
 .paddingTop {
-  padding-top: 100px;
+  padding-top: 75px;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -137,6 +138,7 @@ margin: 0 1%;
   color: #ccc;
   padding: 10px 0;
   height: 150px;
+  font-size: 1.5rem;
 }
 
 /* Add Animation - Zoom in the Modal */
@@ -151,25 +153,21 @@ margin: 0 1%;
 }
 
 /* The Close Button */
-.close {
+.close-x {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
+  color: white;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
-  color: #bbb;
+.close-x:hover,
+.close-x:focus {
+  color: grey;
   text-decoration: none;
   cursor: pointer;
-}
-
-.newWidth {
-  max-width: 250px;
 }
 
 /* 100% Image Width on Smaller Screens */
@@ -179,7 +177,50 @@ margin: 0 1%;
   }
 }
 
-      /*------------------------POP UP------------------------------*/
+/* ---------------------myLightbox------------------------- */
+
+.lightbox {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 125px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  padding: 2.5% 15%;
+}
+
+.lightbox-image {
+  width: 60%;
+  height: 100%;
+}
+
+.carousel-item {
+  padding: 5%;
+  text-align: center;
+}
+
+/* The Close Button */
+.close-x2 {
+  position: absolute;
+  cursor: pointer;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close-x:hover,
+.close-x:focus {
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+  /*------------------------POP UP------------------------------*/
 
       .bg-popup {
         width: 100%;
