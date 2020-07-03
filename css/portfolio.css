@@ -1,0 +1,407 @@
+html body {
+  height: 100%;
+}
+
+.portfolio-heading {
+  display: block;
+  margin: 0;
+  margin-top: 1%;
+  text-align: center;
+}
+
+  /*---------------------------------BUTTONS------------------------------------*/
+
+
+.buttons-div {
+  margin: 2.5% auto;
+  text-align: center;
+}
+
+.btn {
+margin: 0 1%;
+}
+
+#buttons-section2 {
+  display: none;
+}
+
+
+.btn:hover {
+  background-color: #3c3c3b;
+  transition: 0.5s;
+}
+
+.btn:active{
+  position: relative;
+  top: 1px;
+  box-shadow: none !important;
+}
+
+.btn:focus{
+  box-shadow: none;
+}
+
+.default-switch {
+  background-color: #3c3c3b !important;
+}
+
+.selected {
+  background-color: #3c3c3b;
+}
+
+/*---------------------------------SWITCHES------------------------------------*/
+.display-none {
+  display: none !important;
+}
+
+.display-block {
+  display: block !important;
+  z-index: -1;
+}
+
+  /*---------------------------------DEVELOPMENT PAGE------------------------------------*/
+
+    #development {
+      z-index: 1 !important;
+      position: relative !important;
+    }
+
+    .development-container {
+    margin: 5% 0;
+    padding: 0 20%;
+    }
+
+    .development-box{
+      text-align: left;
+      margin: 1% auto;
+      padding: 0 2.5%;
+    }
+
+
+    .development_img {
+      margin-bottom: 3%;
+      cursor: pointer;
+      transition: transform 2s;
+    }
+
+    .development_img:hover {
+      position: relative;
+      top: 1.75px;
+      transition: 2s;
+    }
+
+
+  /*---------------------------------MODAL------------------------------------*/
+
+
+    /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 150px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 400px;
+  border: none;
+  border-radius: 0 !important;
+}
+
+.heightImage {
+  max-width: 250px;
+}
+
+.paddingTop {
+  padding-top: 100px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.newWidth {
+  max-width: 250px;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+      /*------------------------POP UP------------------------------*/
+
+      .bg-popup {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+      }
+
+      .popup-content {
+        width: 400px;
+        height: 350px;
+        background-color: white;
+        border-radius: 5px;
+        text-align: center;
+        padding: 30px;
+        position: relative;
+      }
+
+      .popup-content h3 {
+        padding: 2% 0;
+      }
+
+      .img-popup {
+        width: 200px;
+        height: 175px;
+        margin-top: 25px;
+      }
+
+      .close-button {
+        position: absolute;
+        top: -5px;
+        right: 5%;
+        transform: rotate(45deg);
+        cursor: pointer;
+        font-size: 3rem;
+      }
+
+    .motive-buttons {
+      padding: 0% 0;
+    }
+
+    .btn-dark {
+      width: 25%;
+      background-color:#3c3c3b;
+      border: none;
+    }
+
+    .btn-dark:hover {
+      background-color: grey;
+      border: none;
+    }
+
+      /*---------------------------------MODAL IMG-----------------------------------*/
+
+    #myImg {
+      transition: 0.3s;
+    }
+
+
+      /*---------------------------------DESIGN PAGE------------------------------------*/
+
+
+      #design {
+        display: none;
+      }
+
+      /*---------------------------------EDITING PAGE------------------------------------*/
+
+
+      #editing {
+        display: none;
+      }
+
+      /*---------------------------------ANIMATION PAGE------------------------------------*/
+
+
+      #animation {
+        display: none;
+      }
+
+      /*---------------------------------FOOTER-----------------------------------*/
+
+      footer {
+        position: relative;
+        background-color: #3c3c3b;
+        color: white;
+        text-align: center;
+        padding: 2.5% 0;
+      }
+
+      .footer-link {
+        color: white;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: x-large;
+      }
+
+      .footer-link:hover {
+        color: grey;
+      }
+
+      .copyright {
+      font-size: 0.75rem;
+      padding: 10px;
+      }
+
+
+
+  /*--------------------------MEDDIA QUERIES------------------------*/
+
+
+  /*----------LARGE DEVICES-----*/
+
+      @media (min-width: 1700px)  {
+        .development-box {
+          text-align: center;
+        }
+
+      }
+
+
+      @media (max-width: 1300px)  {
+        .development-container {
+        padding: 0 17.5%;
+        }
+
+      }
+
+
+      @media (max-width: 1150px)  {
+        .development-container {
+        padding: 0 12.5%;
+        }
+
+      }
+
+      /*--------BREAKS INTO 2 PER ROW ----------------------*/
+
+      @media (max-width: 991px)  {
+        .development-box {
+          text-align: center;
+        }
+
+        .development-description {
+          width: 85%;
+          margin: auto;
+          margin-bottom: 5%;
+        }
+
+
+
+  /*--------------------------MEDIUM DEVICES------------------------*/
+
+  /*--------BREAKS INTO 1 PER ROW ----------------------*/
+
+    @media (max-width: 767px)  {
+
+      #development {
+        z-index: -1;
+        position: relative;
+      }
+
+      .development-container {
+      margin: 5% 0;
+      padding: 0 22.5%;
+      }
+
+      .development-box{
+        text-align: center;
+        margin: 1% auto;
+        padding: 0 2.5%;
+      }
+
+      .development-description {
+        width: 85%;
+        margin: auto;
+        margin-bottom: 5%;
+      }
+
+
+      .development_img {
+        margin-bottom: 2%;
+      }
+
+    }
+
+    /*--------------------------SMALL DEVICES------------------------*/
+
+    @media (max-width: 600px)  {
+
+      #buttons-section {
+        display: none;
+      }
+
+      #buttons-section2 {
+        display: block;
+        position: relative;
+      }
+
+      .buttons-div2 {
+        margin: 7.5% auto;
+        text-align: center;
+      }
+
+      .buttons-left {
+        display: block;
+        padding-bottom: 2.5%;
+      }
+
+      .buttons-right {
+       display: block;
+      }
+
+      .btn {
+        margin: 0 1% !important;
+        width: 35%;
+        font-size: 0.9rem;
+      }
+
+    }
