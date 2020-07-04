@@ -105,7 +105,7 @@ img.onclick = function(){
 }
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close-x")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -128,12 +128,13 @@ img.onclick = function(){
 }
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close-x")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
+
 
 /////////////////ABSOLUT JAZZ///////////////////
 
@@ -154,11 +155,37 @@ img.onclick = function(){
 }
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close-x")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
   $('.modal').removeClass('paddingTop');
   $('.modal-content').removeClass('heightImage');
+}
+
+
+/////////////////LIGHTBOX - BANGERZ///////////////////
+
+// Get the modal
+var mylightbox = document.getElementById("mylightbox");
+var img = document.querySelector(".bangerz");
+var zoom = document.querySelector(".lightbox-image");
+var controls = document.getElementById("carouselExampleControls");
+
+img.onclick = function(){
+  mylightbox.style.display = "flex";
+  zoom.style.animationName = "zoom"; //when the image is clicked add the zoom animation
+}
+
+  controls.onclick = function(){
+  zoom.style.animationName = "none"; //when a control button is clicked make sure the zoom aniamtion doesnt occur
+ }
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close-x2")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  mylightbox.style.display = "none";
 }
