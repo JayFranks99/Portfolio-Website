@@ -177,6 +177,66 @@ margin: 0 1%;
   }
 }
 
+  /* ---------------------Video Lightbox------------------------- */
+
+  .vidLightbox {
+    display: none;
+    position: fixed; /* Stay in place */
+    align-items: center;
+    text-align: center;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    padding-top: 5%;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+
+  .lightbox-video {
+    margin: auto;
+    display: block;
+    max-width: 800px;
+    max-height: 500px;
+    border: none;
+    border-radius: 0 !important;
+  }
+
+  /* Zooming in to the v */
+  .lightbox-video {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+
+  #carouselExampleSlidesOnly {
+      margin: 0 auto;
+  }
+
+  /* The Close Button */
+  .close-x3 {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close-x3:hover,
+  .close-x3:focus {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
 /* ---------------------myLightbox------------------------- */
 
 .lightbox {

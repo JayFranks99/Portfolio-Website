@@ -165,6 +165,25 @@ span.onclick = function() {
 }
 
 
+////////////////////VIDEO MODAL - LEICESTER///////////////////
+
+var vidLightbox = document.getElementById("videoLightbox");
+var vidImg = document.querySelector(".leicester");
+var video = document.querySelector(".lightbox-video");
+
+vidImg.onclick = function(){
+  vidLightbox.style.display = "flex";
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close-x3")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  vidLightbox.style.display = "none";
+  video.load();
+}
+
+
 /////////////////LIGHTBOX - BANGERZ///////////////////
 
 // Get the modal
