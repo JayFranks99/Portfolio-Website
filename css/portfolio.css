@@ -62,7 +62,7 @@ margin: 0 1%;
   /*---------------------------------DEVELOPMENT PAGE------------------------------------*/
 
     #development {
-      z-index: 1 !important;
+      z-index: 0 !important;
       position: relative !important;
     }
 
@@ -196,8 +196,8 @@ margin: 0 1%;
   .lightbox-video {
     margin: auto;
     display: block;
-    max-width: 800px;
-    max-height: 500px;
+    max-width: 100%;
+    max-height: 400px;
     border: none;
     border-radius: 0 !important;
   }
@@ -476,6 +476,15 @@ width: 5%;
           margin-bottom: 5%;
         }
 
+        /* CONTROLS */
+        .carousel-control-next {
+        right: 15%;
+        }
+
+        .carousel-control-prev {
+        left: 15%;
+        }
+
 
 
   /*--------------------------MEDIUM DEVICES------------------------*/
@@ -511,6 +520,14 @@ width: 5%;
         margin-bottom: 2%;
       }
 
+      /* CONTROLS */
+      .carousel-control-next {
+      right: 10%;
+      }
+
+      .carousel-control-prev {
+      left: 10%;
+      }
     }
 
     /*--------------------------SMALL DEVICES------------------------*/
@@ -546,4 +563,11 @@ width: 5%;
         font-size: 0.9rem;
       }
 
-    }
+      /* CONTROLS */
+      .carousel-control-next {
+      right: 2.5%;
+      }
+
+      .carousel-control-prev {
+      left: 2.5%;
+      }

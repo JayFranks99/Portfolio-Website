@@ -91,7 +91,7 @@ color: #3c3c3b !important;
   left: 0;
   background-color: white;
   overflow-x: hidden;
-  transition: 0.5s; /* Smooth transition to the opening and closing functions*/
+  transition: 0.4s; /* Smooth transition to the opening and closing functions*/
 }
 
 .overlay-content {
