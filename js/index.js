@@ -168,12 +168,75 @@ span.onclick = function() {
 ////////////////////VIDEO MODAL - LEICESTER///////////////////
 
 var vidLightbox = document.getElementById("videoLightbox");
-var vidImg = document.querySelector(".leicester");
 var video = document.querySelector(".lightbox-video");
 
+var vidImg = document.querySelector(".leicester");
+var vidImg2 = document.querySelector(".spotify");
+var vidImg3 = document.querySelector(".hunter");
+var vidImg4 = document.querySelector(".sonar");
+var vidImg5 = document.querySelector(".chase");
+var vidImg6 = document.querySelector(".clucky");
+var vidImg7 = document.querySelector(".doctor");
+var vidImg8 = document.querySelector(".boost");
+var vidImg9 = document.querySelector(".rocky");
+var vidImg10 = document.querySelector(".friends");
+var vidImg11 = document.querySelector(".horror");
+
 vidImg.onclick = function(){
+  video.src = "videos/theFairytale.mp4";
   vidLightbox.style.display = "flex";
 }
+
+vidImg2.onclick = function(){
+  video.src = "videos/spotify.mp4";
+  vidLightbox.style.display = "flex";
+}
+
+vidImg3.onclick = function(){
+  video.src = "videos/thehunter.mp4";
+  vidLightbox.style.display = "flex";
+}
+
+vidImg4.onclick = function(){
+  video.src = "videos/sonar.mp4";
+  vidLightbox.style.display = "flex";
+}
+
+vidImg5.onclick = function(){
+  video.src = "videos/chase.mp4";
+  vidLightbox.style.display = "flex";
+}
+
+vidImg6.onclick = function(){
+  video.src = "videos/clucky.mp4";
+  vidLightbox.style.display = "flex";
+}
+
+vidImg7.onclick = function(){
+  video.src = "videos/doctorwho.mp4";
+  vidLightbox.style.display = "flex";
+}
+
+vidImg8.onclick = function(){
+  video.src = "videos/boost.mp4";
+  vidLightbox.style.display = "flex";
+}
+
+vidImg9.onclick = function(){
+  video.src = "videos/rocky.mp4";
+  vidLightbox.style.display = "flex";
+}
+
+vidImg10.onclick = function(){
+  video.src = "videos/friends.mp4";
+  vidLightbox.style.display = "flex";
+}
+
+vidImg11.onclick = function(){
+  video.src = "videos/horror.mp4";
+  vidLightbox.style.display = "flex";
+}
+
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close-x3")[0];
 
@@ -182,7 +245,6 @@ span.onclick = function() {
   vidLightbox.style.display = "none";
   video.load();
 }
-
 
 /////////////////LIGHTBOX - BANGERZ///////////////////
 
