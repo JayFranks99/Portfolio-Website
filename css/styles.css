@@ -1,3 +1,6 @@
+body {
+  line-height: 2;
+}
 /*---------------------------------LANDING PAGE------------------------------------*/
 
 .content-wrapper {
@@ -55,7 +58,6 @@ font-size: 1.5rem;
   width: 80%;
   margin: 0 auto 0 auto;
   text-align: center;
-  line-height: 2;
   padding: 5% 0 10% 0;
   }
 
@@ -100,6 +102,7 @@ font-size: 1.5rem;
     .skills-description {
       color: #737370;
       text-align: justify;
+      margin: 0 auto;
     }
 
     .coding_img {
@@ -169,6 +172,45 @@ font-size: 1.5rem;
   /*---------------------------------MEDIA QUERIES------------------------------------*/
 
 
+  /* EXTRA LARGE DEVICES */
+
+  @media (min-width: 1300px)  {
+
+    .down-arrow {
+      margin-bottom: 5%;
+    }
+
+      /* ABOUT */
+
+      .profilepic {
+       width: 400px
+      }
+
+        .about-heading {
+          font-size: 3.5rem;
+        }
+
+        .about-description {
+        width: 55%;
+        }
+
+      /* SKILLS */
+
+      .skills-description {
+        width: 100%;
+        text-align: justify;
+      }
+
+      .down-arrow {
+        font-size: 3rem;
+        margin-top: 5%
+        }
+
+    }
+
+
+  /* LARGE DEVICES */
+
   @media (max-width: 1200px)  {
     /*------LANDING PAGE-----*/
 
@@ -206,12 +248,6 @@ font-size: 1.5rem;
     margin: 1%;
     font-size: 1.5rem;
     }
-
-    .down-arrow {
-      font-size: 3rem;
-      margin-top: 5%
-      }
-
   }
 
 
@@ -292,6 +328,9 @@ font-size: 1.5rem;
       padding: 1% 5%;
     }
 
+    .skills-description {
+      width: 70%;
+    }
 
     .up-arrow {
       margin: 10% auto 15% !important;
@@ -358,6 +397,12 @@ font-size: 1.5rem;
     .about-description {
       width: 80%;
     }
+
+      /*SKILLS*/
+
+      .skills-description {
+        width: 95%;
+      }
 
 
       /*UP-ARROW*/
