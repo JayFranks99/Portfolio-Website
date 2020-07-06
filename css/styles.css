@@ -174,20 +174,29 @@ font-size: 1.5rem;
 
   /* EXTRA LARGE DEVICES */
 
-  @media (min-width: 1300px)  {
+  @media (min-width: 1500px)  {
+
+    /* Landing  */
+
+    .text-wrapper img {
+    width: 10%;
+    height: 10%;
+  }
 
     .down-arrow {
-      margin-bottom: 5%;
+      margin-bottom: 6%;
+      font-size: 4rem !important;
     }
 
       /* ABOUT */
 
       .profilepic {
-       width: 400px
+       width: 350px
       }
 
         .about-heading {
           font-size: 3.5rem;
+          margin: 2.5%;
         }
 
         .about-description {
@@ -195,6 +204,10 @@ font-size: 1.5rem;
         }
 
       /* SKILLS */
+
+      #skills {
+        padding: 2.5% 15%;
+      }
 
       .skills-description {
         width: 100%;
