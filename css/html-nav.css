@@ -96,16 +96,16 @@ color: #3c3c3b !important;
 
 .overlay-content {
   position: relative;
-  top: 30%;
+  top: 32.5%;
   width: 100%;
   text-align: center;
 }
 
 .nav-links-overlay {
-  padding: 20px 0;
-  margin: 0 30%;
+  padding: 15px 0;
+  margin: 0%;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: #737370;
   display: block;
   position: relative;
@@ -118,12 +118,14 @@ color: #3c3c3b !important;
 
 .overlay .closebtn {
   position: absolute;
-  top: 1%;
-  right: 18.5%;
+  top: 3%;
+  right: 14%;
   font-size: 40px;
   text-decoration: none !important;
   color: #3c3c3b;
 }
+
+
 
 @media (max-width: 999px) {
   .hamburger {
@@ -138,8 +140,6 @@ color: #3c3c3b !important;
   .overlay a {font-size: 20px}
   .overlay .closebtn {
   font-size: 40px;
-  top: 15px;
-  right: 35px;
   }
 }
 

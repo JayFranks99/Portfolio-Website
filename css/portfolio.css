@@ -558,6 +558,10 @@ width: 5%;
 
     @media (max-width: 600px)  {
 
+      .portfolio-heading {
+        margin-top: 5%;
+      }
+
       #buttons-section {
         display: none;
       }
