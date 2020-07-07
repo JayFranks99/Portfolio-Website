@@ -24,8 +24,8 @@ body {
 }
 
 .text-wrapper img {
-width: 12%;
-height: 12%;
+width: 11%;
+height: 11%;
 margin: 0
 }
 
@@ -66,7 +66,7 @@ font-size: 1.5rem;
   }
 
   .about-heading {
-    margin: 5%;
+    margin: 2.5%;
   }
 
   .about-description {
@@ -80,7 +80,7 @@ font-size: 1.5rem;
 
     #skills {
       position: relative;
-      padding: 2.5% 10% 0;
+      padding: 5% 10% 0;
       text-align: center;
     }
 
@@ -125,7 +125,7 @@ font-size: 1.5rem;
 
     .up-arrow {
     display: block !important;
-    margin: 0 auto 5% !important;
+    margin: 0 auto 7.5% !important;
     cursor: pointer;
     font-size: 2.5rem;
     background-color: #3c3c3b;
@@ -245,21 +245,21 @@ font-size: 1.5rem;
     }
 
     .text-wrapper img {
-    width: 15%;
-    height: 15%;
+    width: 13%;
+    height: 13%;
     margin: 0;
     }
 
     .text-wrapper h1 {
       font-family: 'Archivo Black', sans-serif;
-      font-size: 3rem;
+      font-size: 3.5rem;
       margin: 1%
     }
 
     .text-wrapper h3 {
     font-family: 'Archivo', sans-serif;
     margin: 1%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     }
   }
 
