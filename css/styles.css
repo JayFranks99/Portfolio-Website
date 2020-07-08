@@ -322,6 +322,10 @@ font-size: 1.5rem;
 
   @media (max-width: 768px) {
 
+    .gif {
+      width: 100%;
+    }
+
     /*------LANDING PAGE-----*/
 
     .content-wrapper {
@@ -408,6 +412,9 @@ font-size: 1.5rem;
 
   @media (max-width: 600px)  {
 
+    .gif {
+      width: 125%;
+    }
 
     /*------LANDING PAGE-----*/
 

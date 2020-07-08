@@ -7,14 +7,13 @@ function closeNav() {
   document.getElementById("myNav").style.height = "0%"; //reduce from 100% to 0%
 }
 
-
-//LOADER FUNCTION
 window.addEventListener("load", function() {
   const loader = document.querySelector(".loader");
   setTimeout(function() {
     loader.className += " hidden"; //loader hidden
   }, 2000);
 });
+
 
 $(document).ready(function(){
   $('.menu-toggle').click(function(){
