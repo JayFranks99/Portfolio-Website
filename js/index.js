@@ -176,6 +176,8 @@ var vidImg9 = document.querySelector(".rocky");
 var vidImg10 = document.querySelector(".friends");
 var vidImg11 = document.querySelector(".horror");
 
+var vidBtn1 = document.querySelector(".app-button");
+
 vidImg.onclick = function(){
   video.src = "videos/theFairytale.mp4";
   vidLightbox.style.display = "flex";
@@ -229,6 +231,13 @@ vidImg10.onclick = function(){
 vidImg11.onclick = function(){
   video.src = "videos/horror.mp4";
   vidLightbox.style.display = "flex";
+
+}
+
+vidBtn1.onclick = function(){
+  video.src = "videos/motive_1.mp4";
+  vidLightbox.style.display = "flex";
+  document.querySelector(".bg-popup").style.display = "none";
 }
 
 // Get the <span> element that closes the modal

@@ -18,6 +18,7 @@ body {
 }
 
 .icons-section {
+  margin: 0.5% 0;
   text-align: center;
   width: 100%;
   font-size: 1.25rem;
@@ -32,6 +33,7 @@ body {
   margin-right: 2%;
   display: inline-block;
   color: #3c3c3b;
+
 }
 
 .contact-info-text {
@@ -45,6 +47,11 @@ body {
 .contact-info:hover {
   text-decoration: none;
   color: #737370;
+}
+
+.contact-info:active {
+  position: relative;
+  top: 1px;
 }
 
 .contact-intro {
@@ -103,6 +110,7 @@ footer {
   }
 
   /*--------------------------MEDIUM DEVICES------------------------*/
+
   @media (max-width: 767px) {
     .linkedin {
       display: none !important;
