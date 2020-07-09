@@ -1,3 +1,9 @@
+var body = document.querySelector("body");
+// FADE IN ANIMATION
+$( document ).ready(function() {
+     body.style.opacity = 1;
+});
+
 function openNav() {
   document.getElementById("myNav").style.height = "100%"; //expand from 0% to 100%
   document.getElementById("myNav").style.overflow = "hidden"; //prevents scorlling
@@ -11,7 +17,7 @@ window.addEventListener("load", function() {
   const loader = document.querySelector(".loader");
   setTimeout(function() {
     loader.className += " hidden"; //loader hidden
-  }, 2000);
+  }, 2500);
 });
 
 

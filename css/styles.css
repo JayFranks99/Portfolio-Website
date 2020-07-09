@@ -1,4 +1,6 @@
 body {
+  opacity: 0;
+  transition: 1.5s;
   line-height: 2;
 }
 
@@ -9,6 +11,7 @@ body {
 .loader {
   position: fixed;
   background-color: #fbfbfb;
+
   z-index: 1000;
   top: 0;
   left: 0;
@@ -37,8 +40,8 @@ body {
 
 .content-wrapper {
   width: 80%;
-  margin: 3% 10% 3% 10%;
-  padding-bottom: 7.5%;
+  margin: 2% 10% 2% 10%;
+  padding-bottom: 10%;
 }
 
 .content-wrapper img {
@@ -48,7 +51,7 @@ body {
 .text-wrapper {
   color: #3c3c3b;
   width: 100%;
-  margin-top: -36%;
+  margin-top: -35%;
   text-align: center;
   z-index: -1;
   line-height: 0.5;
