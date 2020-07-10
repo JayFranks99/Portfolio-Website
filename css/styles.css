@@ -31,17 +31,14 @@ main {
   animation-fill-mode: forwards;
 }
 
-
 @keyframes fadeOut {
   100% {
     opacity: 0;
     visibility: hidden;
   }
-
 }
 
 /*---------------------------------LANDING PAGE------------------------------------*/
-
 .content-wrapper {
   width: 80%;
   margin: 2% 10% 2% 10%;
@@ -63,9 +60,9 @@ main {
 }
 
 .text-wrapper img {
-width: 11%;
-height: 11%;
-margin: 0
+  width: 11%;
+  height: 11%;
+  margin: 0
 }
 
 .text-wrapper h1 {
@@ -75,9 +72,9 @@ margin: 0
 }
 
 .text-wrapper h5 {
-font-family: 'Archivo', sans-serif;
-margin: 1%;
-font-size: 1.5rem;
+  font-family: 'Archivo', sans-serif;
+  margin: 1%;
+  font-size: 1.5rem;
 }
 
 .down-arrow {
@@ -88,345 +85,317 @@ font-size: 1.5rem;
 }
 
 .down-arrow:hover {
- color: #737370;
+  color: #737370;
 }
 
 /*---------------------------------ABOUT PAGE------------------------------------*/
-
 .about {
   width: 80%;
   margin: 5% auto 10% auto;
   text-align: center;
-  }
+}
 
-  .profilepic {
-   width: 300px
-  }
+.profilepic {
+  width: 300px
+}
 
-  .about-heading {
-    margin: 2.5%;
-  }
+.about-heading {
+  margin: 2.5%;
+}
 
-  .about-description {
-    width: 65%;
-    margin: 0 auto;
-    text-align: justify;
-    color: #737370;
-  }
+.about-description {
+  width: 65%;
+  margin: 0 auto;
+  text-align: justify;
+  color: #737370;
+}
 
-  .cv-button {
-    margin-top: 3.5%;
-    background-color: #3c3c3b;
-    color: white;
-  }
+.cv-button {
+  margin-top: 3.5%;
+  background-color: #3c3c3b;
+  color: white;
+}
 
-  .cv-button:hover {
-    background-color: #737370;
-  }
+.cv-button:hover {
+  background-color: #737370;
+}
 
-  .cv-button:active{
-    position: relative;
-    top: 1px;
-    border: none !important;
-    box-shadow: none !important;
-  }
+.cv-button:active {
+  position: relative;
+  top: 1px;
+  border: none !important;
+  box-shadow: none !important;
+}
 
-  .cv-button:focus {
-    border: none !important;
-    box-shadow: none !important;
-    }
+.cv-button:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
 
-  /*---------------------------------SKILLS PAGE------------------------------------*/
+/*---------------------------------SKILLS PAGE------------------------------------*/
+#skills {
+  position: relative;
+  padding: 5% 12.55% 0;
+  text-align: center;
+}
 
-    #skills {
-      position: relative;
-      padding: 5% 12.55% 0;
-      text-align: center;
-    }
+.skills-heading {
+  margin: 0;
+}
 
-    .skills-heading {
-      margin: 0;
-    }
+.row-skills {}
 
-    .row-skills {
-    }
+.skills-box {
+  padding: 5% 5%;
+}
 
-    .skills-box{
-      padding: 5% 5%;
-    }
+.skill-type {
+  margin: 5% 0;
+}
 
-    .skill-type {
-      margin: 5% 0;
-    }
+.skills-description {
+  color: #737370;
+  text-align: justify;
+  margin: 0 auto;
+}
 
-    .skills-description {
-      color: #737370;
-      text-align: justify;
-      margin: 0 auto;
-    }
+.coding_img {
+  width: 125px;
+  height: 150px;
+}
 
-    .coding_img {
-    width: 125px;
-    height: 150px;
-    }
+.design_img {
+  width: 150px;
+  height: 150px;
+}
 
-    .design_img {
-    width: 150px;
-    height: 150px;
-    }
+.marketing_img {
+  width: 100px;
+  height: 150px;
+}
 
-    .marketing_img {
-    width: 100px;
-    height: 150px;
-    }
+/*---------------------------------UP BUTTON------------------------------------*/
+.up-arrow {
+  display: block !important;
+  margin: 0 auto 7.5% !important;
+  cursor: pointer;
+  font-size: 2.5rem;
+  background-color: #3c3c3b;
+  width: 40px;
+  height: 40px;
+  color: white;
+  text-align: center;
+  line-height: 40px !important;
+  /*vertically-align*/
+}
 
-      /*---------------------------------UP BUTTON------------------------------------*/
+.up-arrow:hover {
+  color: #737370;
+}
 
+/*---------------------------------FOOTER-----------------------------------*/
+footer {
+  position: relative;
+  background-color: #3c3c3b;
+  color: white;
+  text-align: center;
+  padding: 2.5% 0;
+}
 
-    .up-arrow {
-    display: block !important;
-    margin: 0 auto 7.5% !important;
-    cursor: pointer;
-    font-size: 2.5rem;
-    background-color: #3c3c3b;
-    width: 40px;
-    height: 40px;
-    color: white;
-    text-align: center;
-    line-height: 40px !important; /*vertically-align*/
-    }
+.footer-link {
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: x-large;
+}
 
-    .up-arrow:hover {
-      color: #737370;
-    }
+.footer-link:hover {
+  color: grey;
+}
 
-
-  /*---------------------------------FOOTER-----------------------------------*/
-
-  footer {
-    position: relative;
-    background-color: #3c3c3b;
-    color: white;
-    text-align: center;
-    padding: 2.5% 0;
-  }
-
-  .footer-link {
-    color: white;
-    padding: 10px;
-    margin-top: 10px;
-    font-size: x-large;
-  }
-
-  .footer-link:hover {
-    color: grey;
-  }
-
-  .copyright {
+.copyright {
   font-size: 0.75rem;
   padding: 10px;
-  }
+}
 
+/*---------------------------------MEDIA QUERIES------------------------------------*/
+/* EXTRA LARGE DEVICES */
+@media (min-width: 1500px) {
 
-
-  /*---------------------------------MEDIA QUERIES------------------------------------*/
-
-
-  /* EXTRA LARGE DEVICES */
-
-  @media (min-width: 1500px)  {
-
-    /* Landing  */
-
-    .text-wrapper img {
+  /* Landing  */
+  .text-wrapper img {
     width: 10%;
     height: 10%;
   }
 
-    .down-arrow {
-      margin-bottom: 6%;
-      font-size: 4rem !important;
-    }
+  .down-arrow {
+    margin-bottom: 6%;
+    font-size: 4rem !important;
+  }
 
-      /* ABOUT */
+  /* ABOUT */
+  .profilepic {
+    width: 350px
+  }
 
-      .profilepic {
-       width: 350px
-      }
+  .about-heading {
+    font-size: 3.5rem;
+    margin: 2.5%;
+  }
 
-        .about-heading {
-          font-size: 3.5rem;
-          margin: 2.5%;
-        }
+  .about-description {
+    width: 55%;
+  }
 
-        .about-description {
-        width: 55%;
-        }
+  /* SKILLS */
+  #skills {
+    padding: 2.5% 15%;
+  }
 
-      /* SKILLS */
+  .skills-description {
+    width: 100%;
+    text-align: justify;
+  }
 
-      #skills {
-        padding: 2.5% 15%;
-      }
+  .down-arrow {
+    font-size: 3rem;
+    margin-top: 5%
+  }
+}
 
-      .skills-description {
-        width: 100%;
-        text-align: justify;
-      }
+/* LARGE DEVICES */
+@media (max-width: 1200px) {
 
-      .down-arrow {
-        font-size: 3rem;
-        margin-top: 5%
-        }
+  /*------LANDING PAGE-----*/
+  .content-wrapper {
+    width: 80%;
+    margin: 10% 10% 10% 10%;
+  }
 
-    }
+  .content-wrapper img {
+    width: 100%;
+  }
 
+  .text-wrapper {
+    color: #3c3c3b;
+    width: 100%;
+    margin-top: -40%;
+    text-align: center;
+    letter-spacing: 2px;
+  }
 
-  /* LARGE DEVICES */
-
-  @media (max-width: 1200px)  {
-    /*------LANDING PAGE-----*/
-
-     .content-wrapper {
-      width: 80%;
-      margin: 10% 10% 10% 10%;
-    }
-
-    .content-wrapper img {
-      width: 100%;
-    }
-
-    .text-wrapper {
-      color: #3c3c3b;
-      width: 100%;
-      margin-top: -40%;
-      text-align: center;
-      letter-spacing: 2px;
-    }
-
-    .text-wrapper img {
+  .text-wrapper img {
     width: 13%;
     height: 13%;
     margin: 0;
-    }
+  }
 
-    .text-wrapper h1 {
-      font-family: 'Archivo Black', sans-serif;
-      font-size: 3.5rem;
-      margin: 1%
-    }
+  .text-wrapper h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3.5rem;
+    margin: 1%
+  }
 
-    .text-wrapper h3 {
+  .text-wrapper h3 {
     font-family: 'Archivo', sans-serif;
     margin: 1%;
     font-size: 2rem;
-    }
+  }
+}
+
+/*--------------------------MEDIUM DEVICES------------------------*/
+@media (max-width: 768px) {
+  .gif {
+    width: 100%;
   }
 
+  /*------LANDING PAGE-----*/
+  .content-wrapper {
+    width: 80%;
+    margin: 17.5% 10% 17.5% 10%;
+  }
 
-      /*--------------------------MEDIUM DEVICES------------------------*/
+  .content-wrapper img {
+    width: 100%;
+  }
 
-  @media (max-width: 768px) {
+  .text-wrapper {
+    color: #3c3c3b;
+    width: 100%;
+    margin-top: -40%;
+    text-align: center;
+    letter-spacing: 2px;
+  }
 
-    .gif {
-      width: 100%;
-    }
-
-    /*------LANDING PAGE-----*/
-
-    .content-wrapper {
-      width: 80%;
-      margin: 17.5% 10% 17.5% 10%;
-    }
-
-    .content-wrapper img {
-      width: 100%;
-    }
-
-    .text-wrapper {
-      color: #3c3c3b;
-      width: 100%;
-      margin-top: -40%;
-      text-align: center;
-      letter-spacing: 2px;
-    }
-
-    .text-wrapper img {
-    width: 20%;
-    height: 20%;
+  .text-wrapper img {
+    width: 15%;
+    height: 15%;
     margin: 0;
-    }
+  }
 
-    .text-wrapper h1 {
-      font-family: 'Archivo Black', sans-serif;
-      font-size: 3rem;
-      margin: 1%
-    }
+  .text-wrapper h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3rem;
+    margin: 1%
+  }
 
-    .text-wrapper h3 {
+  .text-wrapper h3 {
     font-family: 'Archivo', sans-serif;
     margin: 1%;
     font-size: 1.5rem;
-    }
+  }
 
-    .down-arrow {
-      font-size: 3rem;
-      margin-top: 5%
-      }
+  .down-arrow {
+    font-size: 3rem;
+    margin-top: 5%
+  }
 
+  /*ABOUT*/
+  .about {
+    width: 80%;
+  }
 
-    /*ABOUT*/
+  .profilepic {
+    width: 300px
+  }
 
-    .about {
-      width: 80%;
-      }
+  .about-description {
+    text-align: justify !important;
+  }
 
-    .profilepic {
-     width: 300px
-    }
+  .about-heading {
+    margin: 10%;
+    font-size: 2.5rem;
+  }
 
-    .about-description {
-     text-align: justify !important;
-    }
+  /*SKILLS*/
+  .skills-heading {
+    font-size: 2.5rem;
+    padding: 10%;
+  }
 
-    .about-heading {
-      margin: 10%;
-      font-size: 2.5rem;
-    }
+  .skills-box {
+    padding: 1% 5%;
+  }
 
-    /*SKILLS*/
+  .skills-description {
+    width: 70%;
+  }
 
-    .skills-heading {
-      font-size: 2.5rem;
-      padding: 10%;
-    }
+  .up-arrow {
+    margin: 10% auto 15% !important;
+  }
 
-    .skills-box {
-      padding: 1% 5%;
-    }
-
-    .skills-description {
-      width: 70%;
-    }
-
-    .up-arrow {
-      margin: 10% auto 15% !important;
-    }
-
-
-    /*--------------------------SMALL DEVICES------------------------*/
-
-  @media (max-width: 600px)  {
-
+  /*--------------------------SMALL DEVICES------------------------*/
+  @media (max-width: 600px) {
     .gif {
       width: 125%;
     }
 
     /*------LANDING PAGE-----*/
-
     .content-wrapper {
       width: 80%;
-      margin: 40% 10% 40% 10%;
+      margin: 40% 10% 40% 10%
     }
 
     .content-wrapper img {
@@ -438,15 +407,15 @@ font-size: 1.5rem;
       color: #3c3c3b;
       width: 100%;
       /* margin-top: -50%; */
-      margin-top: -20%;
+      margin-top: -25%;
       text-align: center;
       letter-spacing: 2px;
     }
 
     .text-wrapper img {
-    width: 25%;
-    height: 25%;
-    margin: 0;
+      width: 18.5%;
+      height: 18.5%;
+      margin: 0;
     }
 
     .text-wrapper h1 {
@@ -456,23 +425,20 @@ font-size: 1.5rem;
     }
 
     .text-wrapper h3 {
-    font-family: 'Archivo', sans-serif;
-    margin: 1%;
-    font-size: 1.5rem;
+      font-family: 'Archivo', sans-serif;
+      margin: 1%;
+      font-size: 1.5rem;
     }
 
     .down-arrow {
       font-size: 3rem;
       margin-top: 5%
-      }
+    }
 
-
-      /*ABOUT*/
-
-      .about {
-
-        margin: 5% auto 20% auto;
-        }
+    /*ABOUT*/
+    .about {
+      margin: 5% auto 20% auto;
+    }
 
     .profilepic {
       margin-top: 15%;
@@ -483,17 +449,44 @@ font-size: 1.5rem;
       width: 80%;
     }
 
-      /*SKILLS*/
+    .cv-button {
+      margin-top: 10%;
+    }
 
-      .skills-description {
-        width: 95%;
-      }
+    /*SKILLS*/
+    .skills-description {
+      width: 95%;
+    }
 
-
-      /*UP-ARROW*/
-
+    /*UP-ARROW*/
     .up-arrow {
       margin: 5% auto 10% !important;
     }
+  }
 
+/* IPHONE */
+  @media (max-width: 475px) {
+
+    .content-wrapper {
+      width: 100%;
+      margin: 55% 0% 55% 0%;
+    }
+
+    .text-wrapper {
+      margin-top: -20%;
+    }
+
+    .text-wrapper h1 {
+      font-size: 2.5rem;
+    }
+
+    .text-wrapper h3 {
+      font-size: 1rem;
+    }
+
+    .text-wrapper img {
+      width: 17.5%;
+      height: 17.5%;
+      margin: 0;
+    }
   }
