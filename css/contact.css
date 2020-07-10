@@ -1,7 +1,12 @@
 body {
   line-height: 2;
+}
+
+main {
   opacity: 0;
-  transition: 1.5s;
+  transition: 1.25s;
+  position: relative;
+  bottom: -750px;
 }
 
 .contact-heading {

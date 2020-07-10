@@ -102,10 +102,10 @@ color: #3c3c3b !important;
 }
 
 .nav-links-overlay {
-  padding: 15px 0;
+  padding: 15px 0 !important;
   margin: 0%;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #737370;
   display: block;
   position: relative;

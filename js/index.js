@@ -1,8 +1,16 @@
-var body = document.querySelector("body");
+var main = document.querySelector("main");
 // FADE IN ANIMATION
 $( document ).ready(function() {
-     body.style.opacity = 1;
+     main.style.opacity = 1;
+     main.style.bottom = 0;
 });
+
+
+//DOCUMENT FADES OUT BEFORE IT ENTERS ANOTHER PAGE
+$(window).on('beforeunload', function() {
+  $('body').css({"opacity":"0","transition":"0.5s"});
+});
+
 
 function openNav() {
   document.getElementById("myNav").style.height = "100%"; //expand from 0% to 100%
@@ -17,7 +25,7 @@ window.addEventListener("load", function() {
   const loader = document.querySelector(".loader");
   setTimeout(function() {
     loader.className += " hidden"; //loader hidden
-  }, 2500);
+  }, 2000);
 });
 
 

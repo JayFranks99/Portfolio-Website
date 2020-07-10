@@ -1,7 +1,8 @@
-body {
-  height: 100%;
+main {
   opacity: 0;
-  transition: 1.5s;
+  position: relative;
+  bottom: -750px;
+  transition: 1.25s;
 }
 
 .portfolio-heading {

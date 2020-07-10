@@ -1,7 +1,12 @@
 body {
-  opacity: 0;
-  transition: 1.5s;
   line-height: 2;
+}
+
+main {
+  opacity: 0;
+  position: relative;
+  bottom: -750px;
+  transition: 1.25s;
 }
 
 .gif {
@@ -11,7 +16,6 @@ body {
 .loader {
   position: fixed;
   background-color: #fbfbfb;
-
   z-index: 1000;
   top: 0;
   left: 0;
@@ -23,7 +27,7 @@ body {
 }
 
 .loader.hidden {
-  animation: fadeOut 0.5s;
+  animation: fadeOut 1s;
   animation-fill-mode: forwards;
 }
 
@@ -91,9 +95,8 @@ font-size: 1.5rem;
 
 .about {
   width: 80%;
-  margin: 0 auto 0 auto;
+  margin: 5% auto 10% auto;
   text-align: center;
-  padding: 5% 0 10% 0;
   }
 
   .profilepic {
@@ -465,6 +468,11 @@ font-size: 1.5rem;
 
 
       /*ABOUT*/
+
+      .about {
+
+        margin: 5% auto 20% auto;
+        }
 
     .profilepic {
       margin-top: 15%;
