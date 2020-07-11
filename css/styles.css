@@ -312,7 +312,7 @@ footer {
   /*------LANDING PAGE-----*/
   .content-wrapper {
     width: 80%;
-    margin: 17.5% 10% 17.5% 10%;
+    margin: 20% 10% 20% 10%
   }
 
   .content-wrapper img {
@@ -384,6 +384,17 @@ footer {
 
   .up-arrow {
     margin: 10% auto 15% !important;
+  }
+
+
+  @media (max-width: 691px) {
+
+    /*------LANDING PAGE-----*/
+    .content-wrapper {
+      width: 80%;
+      margin: 25% 10% 27.5% 10%;
+    }
+
   }
 
   /*--------------------------SMALL DEVICES------------------------*/
@@ -469,7 +480,7 @@ footer {
 
     .content-wrapper {
       width: 100%;
-      margin: 55% 0% 55% 0%;
+      margin: 60% 0% 60% 0%;
     }
 
     .text-wrapper {

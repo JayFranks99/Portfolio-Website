@@ -143,11 +143,4 @@ footer {
     }
   }
 
-
-  /* IPHONE */
-    @media (max-width: 475px) {
-      .icons-section {
-        font-size: 1rem;
-      }
-
-    }
+}
