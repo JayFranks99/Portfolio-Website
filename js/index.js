@@ -42,7 +42,7 @@ $(document).ready(function(){
   $(".down-arrow").click(function() {
     $('html, body').animate({
         scrollTop: $("#about").offset().top
-    }, 1000);
+    }, 1500);
 });
 
 //SMOOTH ANIMATION ON CLICK - UP
