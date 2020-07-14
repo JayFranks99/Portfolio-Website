@@ -352,7 +352,7 @@ footer {
 
     .profilepic {
       margin-top: 15%;
-      width: 250px;
+      width: 225px;
     }
 
     .about-description {
@@ -408,6 +408,18 @@ footer {
 		.intro-description {
 			font-size: 1.25rem;
 		}
+
+		.about-heading {
+		font-size: 2rem;
+		}
+
+		.skills-heading {
+		font-size: 2rem;
+		}
+
+		.skill-type {
+			font-size: 1.5rem;
+		}
 	}
 
 	@media (max-width: 465px) {
@@ -426,8 +438,6 @@ footer {
 		.intro-description {
 			font-size: 1.25rem;
 		}
-
-	}
 
 	/*--------------------------IPHONE DEVICES------------------------*/
 

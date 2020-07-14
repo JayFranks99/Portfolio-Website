@@ -11,13 +11,12 @@ main {
 
 .contact-heading {
   display: block;
-  margin: 0;
-  margin: 1%;
+  margin: 2.5%;
   text-align: center;
 }
 
 .contact-container {
-  padding: 0% 20%;
+  padding: 0 20%;
 }
 
 .profile-pic {
@@ -113,7 +112,7 @@ footer {
 
 @media (max-width: 925px) {
   .contact-container {
-    padding: 0% 12.5%;
+    padding: 0 12.5%;
   }
 
   /*--------------------------MEDIUM DEVICES------------------------*/
@@ -121,26 +120,34 @@ footer {
   @media (max-width: 767px) {
     .linkedin {
       display: none !important;
-  }
+    }
+
+}
 
   /*--------------------------SMALL DEVICES------------------------*/
   @media (max-width: 600px) {
 
     .contact-heading {
       margin-top: 5%;
-    }
+      }
 
     .icons-section {
       margin: 2% 0;
     }
 
     .contact-container {
-      padding: 0% 10%;
+      padding: 0 10%;
     }
 
     #maps {
       height: 300px;
     }
-  }
 
 }
+
+
+  @media (max-width: 536px) {
+    .contact-heading {
+      font-size: 2rem;
+    }
+  }
