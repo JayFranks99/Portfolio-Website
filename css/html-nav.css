@@ -14,8 +14,19 @@ hr {
     border-color: #3c3c3b;
     border-width: 5px;
     width: 10%;
-    margin: 0 auto;
-    padding-bottom: 5%;
+    margin: 15% auto;
+ }
+
+ @media (max-width: 600px) {
+   hr {
+     margin: 25% auto;
+   }
+ }
+
+ @media (max-width: 414px) {
+   hr {
+     margin: 40% auto;
+   }
  }
 
  h1, h2, h3 {

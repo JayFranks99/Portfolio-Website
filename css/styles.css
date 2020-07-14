@@ -1,5 +1,16 @@
+html {
+	height: 100%; /* important for vertical alignment to work*/
+	width: 100%;
+}
+
 body {
+	margin: 0;
+	background-color: white;
+  color: #3c3c3b;
+	max-width:100%;
+	height: 100%;
   line-height: 2;
+	font-family: 'Archivo Black', sans-serif;
 }
 
 main {
@@ -38,49 +49,57 @@ main {
   }
 }
 
-/*---------------------------------LANDING PAGE------------------------------------*/
-.content-wrapper {
-  width: 80%;
-  margin: 2% 10% 2% 10%;
-  padding-bottom: 10%;
+/*---------------------------------LANDING------------------------------------*/
+
+.container {
+	position: relative;
+	height: 80%;
+	width: 80%;
+	margin: 0 auto;
 }
 
-.content-wrapper img {
-  width: 100%;
+.backg-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
 }
 
-.text-wrapper {
-  color: #3c3c3b;
-  width: 100%;
-  margin-top: -35%;
-  text-align: center;
-  z-index: -1;
-  line-height: 0.5;
-  letter-spacing: 2px;
+.landing-content {
+	position: absolute;
+	width: 100%;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+ 	-ms-transform: translate(-50%, -50%);
+ 	transform: translate(-50%, -50%);
+	text-align: center; /*HORIZONTAL CENTERING*/
+	line-height: 1.5;
+	letter-spacing: 2px;
 }
 
-.text-wrapper img {
-  width: 11%;
-  height: 11%;
-  margin: 0
+.logo {
+width: 100px;
+height: 100px;
+margin: 0.5% auto;
 }
 
-.text-wrapper h1 {
-  font-family: 'Archivo Black', sans-serif;
-  font-size: 4rem;
-  margin: 1%
+.intro-heading {
+	margin: 0 auto;
+	font-size: 4rem;
 }
 
-.text-wrapper h5 {
-  font-family: 'Archivo', sans-serif;
-  margin: 1%;
-  font-size: 1.5rem;
+.intro-description {
+	margin: 0 auto;
+	font-size: 1.5em;
+	text-align: center;
 }
 
 .down-arrow {
+	margin: 1% auto;
   color: #3c3c3b;
   font-size: 3rem;
-  margin-top: 1%;
   cursor: pointer;
 }
 
@@ -91,7 +110,7 @@ main {
 /*---------------------------------ABOUT PAGE------------------------------------*/
 .about {
   width: 80%;
-  margin: 5% auto 10% auto;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -135,7 +154,7 @@ main {
 /*---------------------------------SKILLS PAGE------------------------------------*/
 #skills {
   position: relative;
-  padding: 5% 12.55% 0;
+  padding: 0% 12.55%;
   text-align: center;
 }
 
@@ -177,7 +196,7 @@ main {
 /*---------------------------------UP BUTTON------------------------------------*/
 .up-arrow {
   display: block !important;
-  margin: 0 auto 7.5% !important;
+  margin: 1% auto 5% !important;
   cursor: pointer;
   font-size: 2.5rem;
   background-color: #3c3c3b;
@@ -219,19 +238,9 @@ footer {
 }
 
 /*---------------------------------MEDIA QUERIES------------------------------------*/
+
 /* EXTRA LARGE DEVICES */
 @media (min-width: 1500px) {
-
-  /* Landing  */
-  .text-wrapper img {
-    width: 10%;
-    height: 10%;
-  }
-
-  .down-arrow {
-    margin-bottom: 6%;
-    font-size: 4rem !important;
-  }
 
   /* ABOUT */
   .profilepic {
@@ -249,7 +258,7 @@ footer {
 
   /* SKILLS */
   #skills {
-    padding: 2.5% 15%;
+    padding: 0 15%;
   }
 
   .skills-description {
@@ -263,94 +272,35 @@ footer {
   }
 }
 
-/* LARGE DEVICES */
-@media (max-width: 1200px) {
-
-  /*------LANDING PAGE-----*/
-  .content-wrapper {
-    width: 80%;
-    margin: 10% 10% 10% 10%;
-  }
-
-  .content-wrapper img {
-    width: 100%;
-  }
-
-  .text-wrapper {
-    color: #3c3c3b;
-    width: 100%;
-    margin-top: -40%;
-    text-align: center;
-    letter-spacing: 2px;
-  }
-
-  .text-wrapper img {
-    width: 13%;
-    height: 13%;
-    margin: 0;
-  }
-
-  .text-wrapper h1 {
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 3.5rem;
-    margin: 1%
-  }
-
-  .text-wrapper h3 {
-    font-family: 'Archivo', sans-serif;
-    margin: 1%;
-    font-size: 2rem;
-  }
+@media (max-width: 999px) {
+	.backg-img {
+		display: none;
+	}
 }
 
 /*--------------------------MEDIUM DEVICES------------------------*/
 @media (max-width: 768px) {
+
   .gif {
     width: 100%;
   }
 
-  /*------LANDING PAGE-----*/
-  .content-wrapper {
-    width: 80%;
-    margin: 20% 10% 20% 10%
-  }
+  /*LANDING*/
 
-  .content-wrapper img {
-    width: 100%;
-  }
+	.logo {
+	width: 85px;
+	height: 85px;
+	}
 
-  .text-wrapper {
-    color: #3c3c3b;
-    width: 100%;
-    margin-top: -40%;
-    text-align: center;
-    letter-spacing: 2px;
-  }
+	.intro-heading {
+		font-size: 3.5rem;
+	}
 
-  .text-wrapper img {
-    width: 15%;
-    height: 15%;
-    margin: 0;
-  }
+	.intro-description {
+		font-size: 1.5rem;
+	}
 
-  .text-wrapper h1 {
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 3rem;
-    margin: 1%
-  }
 
-  .text-wrapper h3 {
-    font-family: 'Archivo', sans-serif;
-    margin: 1%;
-    font-size: 1.5rem;
-  }
-
-  .down-arrow {
-    font-size: 3rem;
-    margin-top: 5%
-  }
-
-  /*ABOUT*/
   .about {
     width: 80%;
   }
@@ -369,6 +319,7 @@ footer {
   }
 
   /*SKILLS*/
+
   .skills-heading {
     font-size: 2.5rem;
     padding: 10%;
@@ -386,69 +337,17 @@ footer {
     margin: 10% auto 15% !important;
   }
 
-
-  @media (max-width: 691px) {
-
-    /*------LANDING PAGE-----*/
-    .content-wrapper {
-      width: 80%;
-      margin: 25% 10% 27.5% 10%;
-    }
-
-  }
-
   /*--------------------------SMALL DEVICES------------------------*/
+
   @media (max-width: 600px) {
     .gif {
       width: 125%;
     }
 
-    /*------LANDING PAGE-----*/
-    .content-wrapper {
-      width: 80%;
-      margin: 40% 10% 40% 10%
-    }
-
-    .content-wrapper img {
-      /* width: 100%; */
-      width: 0;
-    }
-
-    .text-wrapper {
-      color: #3c3c3b;
-      width: 100%;
-      /* margin-top: -50%; */
-      margin-top: -25%;
-      text-align: center;
-      letter-spacing: 2px;
-    }
-
-    .text-wrapper img {
-      width: 18.5%;
-      height: 18.5%;
-      margin: 0;
-    }
-
-    .text-wrapper h1 {
-      font-family: 'Archivo Black', sans-serif;
-      font-size: 3rem;
-      margin: 1%
-    }
-
-    .text-wrapper h3 {
-      font-family: 'Archivo', sans-serif;
-      margin: 1%;
-      font-size: 1.5rem;
-    }
-
-    .down-arrow {
-      font-size: 3rem;
-      margin-top: 5%
-    }
-
     /*ABOUT*/
+
     .about {
-      margin: 5% auto 20% auto;
+      margin: 0 auto;
     }
 
     .profilepic {
@@ -465,39 +364,107 @@ footer {
     }
 
     /*SKILLS*/
+
+		.coding_img {
+		  width: 100px;
+		  height: 125px;
+		}
+
+		.design_img {
+		  width: 125px;
+		  height: 125px;
+		}
+
+		.marketing_img {
+		  width: 75px;
+		  height: 125px;
+		}
+
+
     .skills-description {
       width: 95%;
     }
 
     /*UP-ARROW*/
     .up-arrow {
-      margin: 5% auto 10% !important;
+      margin: 10% auto !important;
     }
   }
 
-/* IPHONE */
-  @media (max-width: 475px) {
 
-    .content-wrapper {
-      width: 100%;
-      margin: 60% 0% 60% 0%;
-    }
+	@media (max-width: 536px) {
 
-    .text-wrapper {
-      margin-top: -30%;
-    }
+		/* LANDING */
 
-    .text-wrapper h1 {
-      font-size: 2.5rem;
-    }
+		.logo {
+		width: 70px;
+		height: 70px;
+		}
 
-    .text-wrapper h3 {
-      font-size: 1rem;
-    }
+		.intro-heading {
+			font-size: 3rem;
+		}
 
-    .text-wrapper img {
-      width: 17.5%;
-      height: 17.5%;
-      margin: 0;
-    }
-  }
+		.intro-description {
+			font-size: 1.25rem;
+		}
+	}
+
+	@media (max-width: 465px) {
+
+	/* LANDING */
+
+		.logo {
+		width: 65px;
+		height: 65px;
+		}
+
+		.intro-heading {
+			font-size: 2.5rem;
+		}
+
+		.intro-description {
+			font-size: 1.25rem;
+		}
+
+	}
+
+	/*--------------------------IPHONE DEVICES------------------------*/
+
+	@media (max-width: 394px) {
+
+	/* LANDING */
+
+		.logo {
+		width: 60px;
+		height: 60px;
+		}
+
+		.intro-heading {
+			font-size: 2.25rem;
+		}
+
+		.intro-description {
+			font-size: 1rem;
+		}
+
+	}
+
+	/*--------------------------IPHONE 5------------------------*/
+
+	@media (max-width: 365px) {
+	/* LANDING */
+		.logo {
+		width: 45px;
+		height: 45px;
+		}
+
+		.intro-heading {
+			font-size: 2rem;
+		}
+
+		.intro-description {
+			font-size: 0.8rem;
+		}
+
+	}

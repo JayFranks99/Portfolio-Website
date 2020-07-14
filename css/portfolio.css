@@ -74,7 +74,6 @@ margin: 0 1%;
     }
 
     .development-container {
-    margin: 5% 0;
     padding: 0 20%;
     }
 
@@ -479,6 +478,13 @@ width: 5%;
 
 
   /*----------LARGE DEVICES--------*/
+
+
+      @media (min-width: 1500px)  {
+        .development-container {
+        padding: 0 25%;
+        }
+      }
 
       @media (max-width: 1300px)  {
         .development-container {
