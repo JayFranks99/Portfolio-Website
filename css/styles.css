@@ -242,6 +242,24 @@ footer {
 /* EXTRA LARGE DEVICES */
 @media (min-width: 1500px) {
 
+/* LANDING */
+
+.logo {
+	width: 125px;
+	height: 125px;
+}
+
+.intro-heading {
+  font-size: 5rem;
+}
+
+.intro-description {
+  font-size: 2rem;
+}
+
+
+
+
   /* ABOUT */
   .profilepic {
     width: 350px
@@ -254,14 +272,29 @@ footer {
 
   .about-description {
     width: 55%;
+		font-size: 1.5rem;
   }
+
+	.cv-button {
+		font-size: 1.5rem;
+	}
 
   /* SKILLS */
   #skills {
     padding: 0 15%;
   }
 
+	.skills-heading {
+		font-size: 3.5rem;
+		margin: 2.5%;
+	}
+
+	.skill-type {
+		font-size: 2rem;
+	}
+
   .skills-description {
+		font-size: 1.5rem;
     width: 100%;
     text-align: justify;
   }
@@ -270,6 +303,13 @@ footer {
     font-size: 3rem;
     margin-top: 5%
   }
+
+	.up-arrow {
+		font-size: 4rem;
+		width: 60px;
+		height: 60px;
+		line-height: 57px !important;
+	}
 }
 
 @media (max-width: 999px) {
