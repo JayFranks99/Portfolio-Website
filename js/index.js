@@ -48,7 +48,7 @@ $(document).ready(function(){
 //SMOOTH ANIMATION ON CLICK - UP
 $(".up-arrow").click(function() {
   $('html, body').animate({
-      scrollTop: $(".navbar-container").offset().top
+      scrollTop: $("html").offset().top
   }, 1500);
 });
 

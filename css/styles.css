@@ -45,15 +45,26 @@ main {
 @keyframes fadeOut {
   100% {
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden
   }
+}
+
+@keyframes bounce {
+0% {
+	transform: rotate(0);
+}
+
+100% {
+	transform: rotate(360);
+}
+
 }
 
 /*---------------------------------LANDING------------------------------------*/
 
 .container {
 	position: relative;
-	height: 80%;
+	height: 75%;
 	width: 80%;
 	margin: 0 auto;
 }
@@ -422,6 +433,12 @@ footer {
       width: 125%;
     }
 
+		.down-arrow {
+			margin-top: 2.5% !important;
+			width: 30px !important;
+			height: 17.5px !important;
+		}
+
     /*ABOUT*/
 
     .about {
@@ -466,7 +483,18 @@ footer {
     /*UP-ARROW*/
     .up-arrow {
       margin: 10% auto !important;
+			width: 35px !important;;
+		  height: 35px !important;;
     }
+
+		.footer-icon {
+			width: 25px !important;
+		}
+
+		.git {
+			width: 19px !important;
+		}
+
   }
 
 

@@ -668,6 +668,14 @@ width: 5%;
         max-width: 300px;
       }
 
+      .footer-icon {
+        width: 25px !important;
+      }
+
+      .git {
+        width: 19px !important;
+      }
+
       @media (max-width: 536px) {
         .portfolio-heading {
           font-size: 2rem;

@@ -177,6 +177,14 @@ footer {
       height: 300px;
     }
 
+    .footer-icon {
+      width: 25px !important;
+    }
+
+    .git {
+      width: 19px !important;
+    }
+
 }
 
 
