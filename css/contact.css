@@ -31,8 +31,13 @@ main {
   display: inline-block;
 }
 
-.contact-icon {
-  display: inline-block;
+.contact-icons{
+display: inline-block;
+width: 40px;
+}
+
+.linkedIN {
+  width: 25px;
 }
 
 .contact-info {
@@ -46,13 +51,18 @@ main {
   font-family: 'Archivo', sans-serif;
   font-weight: bold;
   display: inline-block;
-  padding-left: 5px;
   text-decoration: underline;
+}
+
+.phone-number {
+position: relative;
+right: 3%;
 }
 
 .contact-info:hover {
   text-decoration: none;
   color: #737370;
+  opacity: 0.7;
 }
 
 .contact-info:active {
@@ -81,14 +91,20 @@ footer {
 }
 
 .footer-link {
-  color: white;
   padding: 10px;
   margin-top: 10px;
-  font-size: x-large;
 }
 
-.footer-link:hover {
-  color: grey;
+.footer-icon {
+	width: 30px !important;
+}
+
+.git {
+	width: 24px !important;
+}
+
+.footer-icon:hover {
+  opacity: 0.5 !important;
 }
 
 .copyright {
@@ -99,14 +115,33 @@ footer {
 /*--------------------------MEDDIA QUERIES------------------------*/
 
 /*---------- EXTRA LARGE DEVICES-----*/
-@media (min-width: 1700px) {
+@media (min-width: 1500px) {
 
-}
+  .contact-heading {
+    font-size: 3.5rem;
+  }
 
-/*----------LARGE DEVICES--------*/
-@media (max-width: 1300px) {
+  .icons-section {
+    font-size: 2rem;
+  }
 
+  .contact-intro {
+    font-size: 1.5rem;
+  }
 
+  #maps {
+    height: 500px;
+  }
+
+  .footer-link {
+    font-size: 40px;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  .copyright {
+    font-size: 1.25rem;
+    padding: 10px;
+  }
 }
 
 
@@ -118,10 +153,9 @@ footer {
   /*--------------------------MEDIUM DEVICES------------------------*/
 
   @media (max-width: 767px) {
-    .linkedin {
+    .linkedin-section {
       display: none !important;
     }
-
 }
 
   /*--------------------------SMALL DEVICES------------------------*/

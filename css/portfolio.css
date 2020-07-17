@@ -409,7 +409,6 @@ width: 5%;
       }
 
       /*---------------------------------FOOTER-----------------------------------*/
-
       footer {
         position: relative;
         background-color: #3c3c3b;
@@ -419,22 +418,26 @@ width: 5%;
       }
 
       .footer-link {
-        color: white;
         padding: 10px;
         margin-top: 10px;
-        font-size: x-large;
       }
 
-      .footer-link:hover {
-        color: grey;
+      .footer-icon {
+      	width: 30px !important;
+      }
+
+      .git {
+      	width: 24px !important;
+      }
+
+      .footer-icon:hover {
+        opacity: 0.5 !important;
       }
 
       .copyright {
-      font-size: 0.75rem;
-      padding: 10px;
+        font-size: 0.75rem;
+        padding: 10px;
       }
-
-
 
   /*--------------------------MEDDIA QUERIES------------------------*/
 
@@ -490,9 +493,40 @@ width: 5%;
 
 
       @media (min-width: 1500px)  {
-        .development-container {
-        padding: 0 25%;
+
+        .portfolio-heading {
+          font-size: 3.5rem;
         }
+
+        .btn {
+         font-size: 1.5rem
+        }
+
+        .development-container {
+        padding: 0 17.5%;
+        }
+
+        .development_img {
+          width: 275px;
+        }
+
+        .development-type {
+          font-size: 2.5rem;
+        }
+
+        .development-description {
+          font-size: 1.5rem;
+        }
+
+        .footer-link {
+    			font-size: 40px;
+    		  padding: 20px;
+    		  margin-top: 10px;
+    		}
+    		.copyright {
+    		  font-size: 1.25rem;
+    		  padding: 10px;
+    		}
       }
 
       @media (max-width: 1300px)  {

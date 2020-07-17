@@ -97,14 +97,14 @@ margin: 0.5% auto;
 }
 
 .down-arrow {
+	width: 35px;
+	height: 22.5px;
 	margin: 1% auto;
-  color: #3c3c3b;
-  font-size: 3rem;
   cursor: pointer;
 }
 
 .down-arrow:hover {
-  color: #737370;
+  opacity: 0.8;
 }
 
 /*---------------------------------ABOUT PAGE------------------------------------*/
@@ -198,18 +198,13 @@ margin: 0.5% auto;
   display: block !important;
   margin: 1% auto 5% !important;
   cursor: pointer;
-  font-size: 2.5rem;
-  background-color: #3c3c3b;
   width: 40px;
   height: 40px;
-  color: white;
   text-align: center;
-  line-height: 40px !important;
-  /*vertically-align*/
 }
 
 .up-arrow:hover {
-  color: #737370;
+opacity: 0.8;
 }
 
 /*---------------------------------FOOTER-----------------------------------*/
@@ -222,14 +217,20 @@ footer {
 }
 
 .footer-link {
-  color: white;
   padding: 10px;
   margin-top: 10px;
-  font-size: x-large;
 }
 
-.footer-link:hover {
-  color: grey;
+.footer-icon {
+	width: 30px !important;
+}
+
+.git {
+	width: 24px !important;
+}
+
+.footer-icon:hover {
+  opacity: 0.5 !important;
 }
 
 .copyright {
@@ -289,6 +290,21 @@ footer {
 		margin: 2.5%;
 	}
 
+	.coding_img {
+		width: 150px;
+		height: 175px;
+	}
+
+	.design_img {
+		width: 175px;
+		height: 175px;
+	}
+
+	.marketing_img {
+		width: 125px;
+		height: 175px;
+	}
+
 	.skill-type {
 		font-size: 2rem;
 	}
@@ -299,17 +315,39 @@ footer {
     text-align: justify;
   }
 
-  .down-arrow {
-    font-size: 3rem;
+  .up-arrow {
     margin-top: 5%
   }
 
 	.up-arrow {
-		font-size: 4rem;
 		width: 60px;
 		height: 60px;
-		line-height: 57px !important;
 	}
+
+
+	/*---------------------------------FOOTER-----------------------------------*/
+
+	.footer-link {
+	  padding: 10px;
+	  margin-top: 10px;
+	}
+
+	.footer-icon {
+		width: 40px !important;
+	}
+
+	.git {
+		width: 32px !important;
+	}
+
+	.footer-icon:hover {
+	  opacity: 0.5 !important;
+	}
+
+		.copyright {
+		  font-size: 1.25rem;
+		  padding: 10px;
+		}
 }
 
 @media (max-width: 999px) {
