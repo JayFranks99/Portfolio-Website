@@ -108,7 +108,7 @@ margin: 0.5% auto;
 }
 
 .profilepic {
-	padding-top: 5%;
+	padding-top: 3%;
   width: 300px
 }
 
@@ -121,6 +121,7 @@ margin: 0.5% auto;
   margin: 0 auto;
   text-align: justify;
   color: #737370;
+	font-size: 1rem;
 }
 
 .cv-button {
@@ -170,6 +171,7 @@ margin: 0.5% auto;
   color: #737370;
   text-align: justify;
   margin: 0 auto;
+	font-size: 1rem;
 }
 
 .coding_img {
