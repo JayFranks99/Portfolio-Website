@@ -166,7 +166,9 @@ footer {
       }
 
     .icons-section {
-      margin: 2% 0;
+      margin: 5% auto 0;
+      display: block;
+      width: 80%;
     }
 
     .contact-container {

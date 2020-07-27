@@ -92,7 +92,7 @@ margin: 0.5% auto;
 .down-arrow {
 	width: 35px;
 	height: 22.5px;
-	margin: 1% auto;
+	margin: 2% auto;
   cursor: pointer;
 }
 
@@ -108,7 +108,7 @@ margin: 0.5% auto;
 }
 
 .profilepic {
-	padding-top: 3%;
+	padding-top: 1%;
   width: 300px
 }
 
@@ -419,7 +419,7 @@ footer {
     }
 
 		.down-arrow {
-			margin-top: 2.5% !important;
+			margin-top: 5% !important;
 			width: 30px !important;
 			height: 17.5px !important;
 		}
@@ -431,7 +431,7 @@ footer {
     }
 
     .profilepic {
-      margin-top: 15%;
+      margin-top: 5%;
       width: 225px;
     }
 
@@ -530,6 +530,10 @@ footer {
 			font-size: 1.25rem;
 		}
 
+		.about {
+		 width: 85%;
+		}
+
 	/*--------------------------IPHONE DEVICES------------------------*/
 
 	@media (max-width: 394px) {
@@ -548,6 +552,11 @@ footer {
 		.intro-description {
 			font-size: 1rem;
 		}
+
+		.about {
+		width: 81%;
+		}
+
 
 	}
 

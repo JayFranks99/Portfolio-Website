@@ -25,7 +25,7 @@ window.addEventListener("load", function() {
   const loader = document.querySelector(".loader");
   setTimeout(function() {
     loader.className += " hidden"; //loader hidden
-  }, 2000);
+  }, 2200);
 });
 
 
@@ -47,9 +47,9 @@ $(document).ready(function(){
 
 //SMOOTH ANIMATION ON CLICK - UP
 $(".up-arrow").click(function() {
-  $('html, body').animate({
-      scrollTop: $("html").offset().top
-  }, 1500);
+  $("html, body").animate
+    ({ scrollTop: 0 }, 1500);
+  return false;
 });
 
 
